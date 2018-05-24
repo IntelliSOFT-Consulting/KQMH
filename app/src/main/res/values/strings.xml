@@ -5,4 +5,36 @@
     <string name="log_in">LOG IN</string>
     <string name="error_email_required">Email is required</string>
     <string name="error_password_required">Password is required.</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="forgot_paasword_">Forgot password?</string>
+    <string name="login">LOG IN</string>
+    <string name="username">User name</string>
+
+    <!-- Slider strings -->
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Welcome to KQMH</string><string name="error_email">Error. Field can not be empty.</string>
+    <string name="error_non_empty">Error. Field can not be empty.</string>
+    <string name="error_no_password">Enter your password.</string>
+    <string name="details">Details</string>
+    <string name="share">Share</string>
+    <string name="gender">Gender</string>
+    <string name="error_password_matching">Passwords do not match</string>
+    <string name="home">Home</string>
+    <string name="make_request">Make Request</string>
+    <string name="settings">Settings</string>
+    <string name="about_us">About Us</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="location">Location</string>
+    <string name="days">Days</string>
+    <string name="request">Request</string>
+
+
 </resources>
+
