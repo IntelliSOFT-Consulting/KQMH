@@ -8,9 +8,16 @@
 
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
-    <string name="forgot_paasword_">Forgot password?</string>
+    <string name="forgot_password">Forgot password?</string>
     <string name="login">LOG IN</string>
     <string name="username">User name</string>
+
+    <!--assessmentInfo -->
+    <string name="dataEntry">DATA ENTRY</string>
+    <string name="spinner_facilityLevel">Facility Level</string>
+    <string name="spinner_period">Quarter Period</string>
+    <string name="spinner_assessType">Assessment Type</string>
+    <string name="spinner_orgUnit">Organisational Unit</string>
 
     <!-- Slider strings -->
     <string name="title_activity_welcome">Home Screen</string>
@@ -18,7 +25,8 @@
     <string name="skip">SKIP</string>
     <string name="start">GOT IT</string>
 
-    <string name="slide_1_title">Welcome to KQMH</string><string name="error_email">Error. Field can not be empty.</string>
+    <string name="slide_1_title">Welcome to KQMH</string>
+    <string name="error_email">Error. Field can not be empty.</string>
     <string name="error_non_empty">Error. Field can not be empty.</string>
     <string name="error_no_password">Enter your password.</string>
     <string name="details">Details</string>
