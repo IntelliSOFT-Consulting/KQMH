@@ -16,7 +16,6 @@ import com.kqmh.app.kqmh.Activities.MainActivity;
 import com.kqmh.app.kqmh.Activities.WelcomeActivity;
 import com.kqmh.app.kqmh.Utils.UrlConstants;
 import com.kqmh.app.kqmh.Utils.VolleySingleton;
-import com.kqmh.app.kqmh.Utils.AppConstants;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -48,11 +47,6 @@ public class SplashScreen extends AppCompatActivity {
     private void getToken() throws JSONException {
         final SessionManager sessionManager = new SessionManager(getBaseContext());
         JSONObject jsonObject = new JSONObject();
-        jsonObject.put("username", AppConstants.AUTH_EMAIL);
-        jsonObject.put("client_id", AppConstants.CLIENT_ID);
-        jsonObject.put("password", AppConstants.AUTH_PASSWORD);
-        jsonObject.put("client_secret", AppConstants.CLIENT_SECRET);
-        jsonObject.put("grant_type", AppConstants.GRANT_TYPE);
 
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, UrlConstants.TOKEN_URL, jsonObject, new Response.Listener<JSONObject>() {
             @Override
