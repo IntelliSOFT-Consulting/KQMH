@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:weightSum="1">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="15dip"
+            android:padding="10dp"
+            android:text="Organisation Unit:" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:hint="@string/spinner_orgUnit"
+            android:padding="10dp"
+            android:prompt="@string/spinner_orgUnit"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dip"
+            android:padding="10dp"
+            android:text="Assessment Type:" />
+
+        <Spinner
+            android:id="@+id/spinner_assess_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:hint="@string/spinner_assessType"
+            android:padding="10dp"
+            android:prompt="@string/spinner_assessType"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dip"
+            android:padding="10dp"
+            android:text="Quarter Period:" />
+
+        <Spinner
+            android:id="@+id/spinner_period"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:hint="@string/spinner_period"
+            android:padding="10dp"
+            android:prompt="@string/spinner_period"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dip"
+            android:padding="10dp"
+            android:text="Facility Level:" />
+
+        <Spinner
+            android:id="@+id/spinner_facilityLevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:hint="@string/spinner_facilityLevel"
+            android:padding="10dp"
+            android:prompt="@string/spinner_facilityLevel"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/bt_dataEntry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/button"
+            android:onClick="Submit"
+            android:text="@string/dataEntry" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
