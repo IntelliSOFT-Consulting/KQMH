@@ -19,6 +19,14 @@
     <string name="spinner_assessType">Assessment Type</string>
     <string name="spinner_orgUnit">Organisational Unit</string>
 
+    <!-- stds strings -->
+    <string name="spinner_dim">KQMH Dimensions</string>
+
+    <!-- scores strings -->
+    <string name="spinner_scores">Scores</string>
+
+
+
     <!-- Slider strings -->
     <string name="title_activity_welcome">Home Screen</string>
     <string name="next">NEXT</string>
