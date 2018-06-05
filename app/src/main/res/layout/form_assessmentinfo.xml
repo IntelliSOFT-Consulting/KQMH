@@ -1,11 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<android.support.design.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
-    android:gravity="center_horizontal"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:ignore="HardcodedText">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_border"
+                app:cardCornerRadius="5dp"
+                card_view:cardElevation="9dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/grey"
+                    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,15 +54,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
-            android:layout_marginTop="15dip"
+            android:layout_marginTop="5dp"
             android:padding="10dp"
-            android:text="Organisation Unit:" />
+            android:text="Organisation Unit:"
+            android:textColor="@color/black" />
 
         <Spinner
-            android:id="@+id/spinner"
+            android:id="@+id/spinner_orgUnit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="5dp"
             android:layout_marginEnd="15dp"
             android:layout_marginStart="15dp"
             android:background="@color/white"
@@ -43,21 +71,22 @@
             android:hint="@string/spinner_orgUnit"
             android:padding="10dp"
             android:prompt="@string/spinner_orgUnit"
-            android:textSize="16sp" />
+            android:textSize="12sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
-            android:layout_marginTop="10dip"
+            android:layout_marginTop="5dp"
             android:padding="10dp"
-            android:text="Assessment Type:" />
+            android:text="Assessment Type:"
+            android:textColor="@color/black"/>
 
         <Spinner
-            android:id="@+id/spinner_assess_type"
+            android:id="@+id/spinner_assessType"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="5dp"
             android:layout_marginEnd="15dp"
             android:layout_marginStart="15dp"
             android:background="@color/white"
@@ -65,21 +94,22 @@
             android:hint="@string/spinner_assessType"
             android:padding="10dp"
             android:prompt="@string/spinner_assessType"
-            android:textSize="16sp" />
+            android:textSize="12sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
-            android:layout_marginTop="10dip"
+            android:layout_marginTop="5dp"
             android:padding="10dp"
-            android:text="Quarter Period:" />
+            android:text="Quarter Period:"
+            android:textColor="@color/black"/>
 
         <Spinner
             android:id="@+id/spinner_period"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="5dp"
             android:layout_marginEnd="15dp"
             android:layout_marginStart="15dp"
             android:background="@color/white"
@@ -87,21 +117,22 @@
             android:hint="@string/spinner_period"
             android:padding="10dp"
             android:prompt="@string/spinner_period"
-            android:textSize="16sp" />
+            android:textSize="12sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
-            android:layout_marginTop="10dip"
+            android:layout_marginTop="5dp"
             android:padding="10dp"
-            android:text="Facility Level:" />
+            android:text="Facility Level:"
+            android:textColor="@color/black"/>
 
         <Spinner
             android:id="@+id/spinner_facilityLevel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="5dp"
             android:layout_marginEnd="15dp"
             android:layout_marginStart="15dp"
             android:background="@color/white"
@@ -109,7 +140,7 @@
             android:hint="@string/spinner_facilityLevel"
             android:padding="10dp"
             android:prompt="@string/spinner_facilityLevel"
-            android:textSize="16sp" />
+            android:textSize="12sp" />
 
         <Button
             android:id="@+id/bt_dataEntry"
@@ -121,4 +152,11 @@
             android:text="@string/dataEntry" />
     </LinearLayout>
 
-</android.support.constraint.ConstraintLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>
