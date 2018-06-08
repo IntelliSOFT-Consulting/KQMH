@@ -18,6 +18,7 @@ public class SessionManager {
     private static final String DATE_TOKEN_REFRESHED = "TokenRefreshed";
     private static final String KEY_REFRESH_TOKEN = "refreshToken";
     private static final String USER_NAME = "userName";
+    private static final String KEY_PASSWORD = "Password";
 
 
     public SessionManager(Context context) {
@@ -43,7 +44,7 @@ public class SessionManager {
         return pref.getString(KEY_REFRESH_TOKEN, null);
     }
 
-    public boolean iisLoggedIn() {
+    public boolean isLoggedIn() {
 
         return pref.getBoolean(KEY_IS_LOGGED_IN, false);
     }
@@ -69,5 +70,14 @@ public class SessionManager {
     public String getUserName() {
 
         return pref.getString(USER_NAME, null);
+    }
+    public void setKeyPassword(String token) {
+
+        pref.edit().putString(KEY_PASSWORD, token).apply();
+    }
+
+    public String getPassword() {
+
+        return pref.getString(KEY_PASSWORD, null);
     }
 }

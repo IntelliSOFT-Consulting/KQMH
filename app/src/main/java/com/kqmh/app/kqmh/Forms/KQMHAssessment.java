@@ -18,16 +18,31 @@ import java.util.ArrayList;
 
 public class KQMHAssessment extends AppCompatActivity {
 
-    private Spinner spinner_scores;
+    private Spinner spinner_score;
+   // private Spinner spinner_score2;
+   // private Spinner spinner_score3;
+   // private Spinner spinner_score4;
+   // private Spinner spinner_score5;
+
     private ProgressDialog progressDialog;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.form_kqmhassessment);
 
-        spinner_scores = findViewById(R.id.spinner_scores);
+        formQuestions();
+        spinner_score = findViewById(R.id.spinner_score);
+        //spinner_score2 = findViewById(R.id.spinner_score2);
+        //spinner_score3 = findViewById(R.id.spinner_score3);
+       // spinner_score4 = findViewById(R.id.spinner_score4);
+        //spinner_score5 = findViewById(R.id.spinner_score5);
 
-        spinnerData(spinner_scores,"1");
+        spinnerData_score(spinner_score,"1");
+        //spinnerData_score(spinner_score2,"1");
+        //spinnerData_score(spinner_score3,"1");
+        //spinnerData_score(spinner_score4,"1");
+        //spinnerData_score(spinner_score5,"1");
+
 
         Button nextStd = findViewById(R.id.btn_next);
         progressDialog = new ProgressDialog(this);
@@ -42,7 +57,7 @@ public class KQMHAssessment extends AppCompatActivity {
 
     }
 
-    public void spinnerData(Spinner spinner, final String choice) {
+    public void spinnerData_score(Spinner spinner, final String choice) {
         ArrayList<KeyValue> keyvalue = new ArrayList<>();
 
         // adding each child node to HashMap key => value
@@ -90,5 +105,10 @@ public class KQMHAssessment extends AppCompatActivity {
         if (progressDialog != null) {
             progressDialog.dismiss();
         }
+    }
+
+
+    private void formQuestions() {
+
     }
 }

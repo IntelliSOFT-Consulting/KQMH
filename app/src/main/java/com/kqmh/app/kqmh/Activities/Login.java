@@ -25,6 +25,8 @@ import com.kqmh.app.kqmh.Utils.VolleySingleton;
 
 import org.json.JSONObject;
 
+import java.net.CookieHandler;
+import java.net.CookieManager;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -37,6 +39,8 @@ public class Login extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        CookieManager cookieManager = new CookieManager();
+        CookieHandler.setDefault(cookieManager);
 
         email = findViewById(R.id.et_email);
         password = findViewById(R.id.et_password);
@@ -65,14 +69,17 @@ public class Login extends AppCompatActivity {
     }
 
     private void login(final String encoded) {
-        progressDialog.show();
         final SessionManager sessionManager = new SessionManager(getBaseContext());
+        progressDialog.show();
         JSONObject jsonObject = new JSONObject();
 
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, UrlConstants.LOGIN_URL, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
-                Log.d("response", response.toString());
+                sessionManager.setKeyBearerToken(encoded);
+                sessionManager.setLoggedIn(true);
+                sessionManager.setUserName(email.getText().toString());
+                sessionManager.setKeyPassword(password.getText().toString());
                 finishLogin();
                 Toast.makeText(Login.this, "Successfull", Toast.LENGTH_SHORT).show();
 
@@ -126,4 +133,5 @@ public class Login extends AppCompatActivity {
             progressDialog.dismiss();
         }
     }
+
 }

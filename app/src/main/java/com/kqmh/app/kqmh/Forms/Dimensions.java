@@ -26,10 +26,10 @@ public class Dimensions extends AppCompatActivity {
 
         spinner_dim = findViewById(R.id.spinner_dim);
 
-        spinnerData(spinner_dim,"1");
+        spinnerData_dim(spinner_dim,"1");
     }
 
-    public void spinnerData(Spinner spinner, final String choice) {
+    public void spinnerData_dim(Spinner spinner, final String choice) {
         final ArrayList<KeyValue> keyvalue = new ArrayList<>();
 
         // adding each child node to HashMap key => value
@@ -37,7 +37,7 @@ public class Dimensions extends AppCompatActivity {
         keyvalue.add(new KeyValue(1, "Dim1: Leadership"));
         keyvalue.add(new KeyValue(2, "Dim2: HRM"));
         keyvalue.add(new KeyValue(3, "Dim3: Guidelines"));
-        keyvalue.add(new KeyValue(4, "DIm4: Infrastructure"));
+        keyvalue.add(new KeyValue(4, "Dim4: Infrastructure"));
         keyvalue.add(new KeyValue(5, "Dim5: Supplies Management"));
         keyvalue.add(new KeyValue(6, "Dim6: Equipment Management"));
         keyvalue.add(new KeyValue(7, "Dim7: Transport Management"));
