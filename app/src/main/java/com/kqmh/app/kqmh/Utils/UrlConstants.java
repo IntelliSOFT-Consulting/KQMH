@@ -6,4 +6,9 @@ public class UrlConstants {
 
     //Urls
     public static final String LOGIN_URL = IP + "api/me/user-account";
+    public static final String TOKEN_URL = IP + "oauth/token";
+    public static final String ORGANISATIONAL_UNIT_URL = IP + "api/organisationUnits";
+    public static final String ASSESSMENT_TYPE_URL = IP +  "/api/categoryOptionCombos";
+
+
 }
