@@ -1,6 +1,5 @@
 package com.kqmh.app.kqmh.Forms;
 
-import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -10,44 +9,24 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 
+import com.kqmh.app.kqmh.Models.KeyValue;
 import com.kqmh.app.kqmh.R;
 import com.kqmh.app.kqmh.SessionManager;
-import com.kqmh.app.kqmh.models.KeyValue;
 
 import java.util.ArrayList;
 
-public class KQMHAssessment extends AppCompatActivity {
+public class Dimension4 extends AppCompatActivity {
 
     private Spinner spinner_score;
-   // private Spinner spinner_score2;
-   // private Spinner spinner_score3;
-   // private Spinner spinner_score4;
-   // private Spinner spinner_score5;
-
-    private ProgressDialog progressDialog;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.form_kqmhassessment);
+        setContentView(R.layout.form_dimension4);
 
-        formQuestions();
         spinner_score = findViewById(R.id.spinner_score);
-        //spinner_score2 = findViewById(R.id.spinner_score2);
-        //spinner_score3 = findViewById(R.id.spinner_score3);
-       // spinner_score4 = findViewById(R.id.spinner_score4);
-        //spinner_score5 = findViewById(R.id.spinner_score5);
-
         spinnerData_score(spinner_score,"1");
-        //spinnerData_score(spinner_score2,"1");
-        //spinnerData_score(spinner_score3,"1");
-        //spinnerData_score(spinner_score4,"1");
-        //spinnerData_score(spinner_score5,"1");
-
 
         Button nextStd = findViewById(R.id.btn_next);
-        progressDialog = new ProgressDialog(this);
-        progressDialog.setTitle("loading form...");
-        progressDialog.setCancelable(false);
         nextStd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -93,22 +72,11 @@ public class KQMHAssessment extends AppCompatActivity {
     }
 
     public void submit() {
-        closeProgressbar();
         new SessionManager(getBaseContext()).setLoggedIn(true);
-        Intent intent = new Intent(getBaseContext(), Dimensions.class);
+        Intent intent = new Intent(getBaseContext(), Dimensions_List.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
                 | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }
 
-    private void closeProgressbar() {
-        if (progressDialog != null) {
-            progressDialog.dismiss();
-        }
-    }
-
-
-    private void formQuestions() {
-
-    }
 }

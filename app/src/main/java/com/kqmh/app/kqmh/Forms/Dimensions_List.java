@@ -2,27 +2,25 @@ package com.kqmh.app.kqmh.Forms;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.widget.Spinner;
 import android.content.Intent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 
-import com.kqmh.app.kqmh.SessionManager;
-import com.kqmh.app.kqmh.models.KeyValue;
+import com.kqmh.app.kqmh.Models.KeyValue;
 import com.kqmh.app.kqmh.R;
 
 import java.util.ArrayList;
 
 
-public class Dimensions extends AppCompatActivity {
+public class Dimensions_List extends AppCompatActivity {
     private Spinner spinner_dim;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.form_dimensions);
+        setContentView(R.layout.form_dimensions_list);
 
         spinner_dim = findViewById(R.id.spinner_dim);
 
@@ -62,11 +60,23 @@ public class Dimensions extends AppCompatActivity {
                     case 0:
                         break;
                     case 1:
-                        Intent intent = new Intent(getBaseContext(), KQMHAssessment.class);
-                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
+                        Intent intentDimension1 = new Intent(getBaseContext(), Dimension1.class);
+                        intentDimension1.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
                                 | Intent.FLAG_ACTIVITY_NEW_TASK);
-                        startActivity(intent);
+                        startActivity(intentDimension1);
                             break;
+                    case 2:
+                        Intent intentDimension2 = new Intent(getBaseContext(), Dimension2.class);
+                        intentDimension2.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
+                                | Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(intentDimension2);
+                        break;
+                    case 3:
+                        Intent intentDimension3 = new Intent(getBaseContext(), Dimension3.class);
+                        intentDimension3.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
+                                | Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(intentDimension3);
+                        break;
                 }
 
             }

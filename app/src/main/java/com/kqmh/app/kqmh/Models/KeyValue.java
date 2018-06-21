@@ -1,4 +1,4 @@
-package com.kqmh.app.kqmh.models;
+package com.kqmh.app.kqmh.Models;
 
 public class KeyValue {
 

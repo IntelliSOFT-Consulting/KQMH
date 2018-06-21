@@ -21,7 +21,7 @@ import com.kqmh.app.kqmh.SessionManager;
 import com.kqmh.app.kqmh.Utils.AuthBuilder;
 import com.kqmh.app.kqmh.Utils.UrlConstants;
 import com.kqmh.app.kqmh.Utils.VolleySingleton;
-import com.kqmh.app.kqmh.models.KeyValue;
+import com.kqmh.app.kqmh.Models.KeyValue;
 
 import org.json.JSONObject;
 
@@ -31,7 +31,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public class AssessmentInfo extends AppCompatActivity {
+public class Assessment_Info extends AppCompatActivity {
 
     private Spinner spinner_orgUnit;
     private Spinner spinner_assessType;
@@ -42,7 +42,7 @@ public class AssessmentInfo extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.form_assessmentinfo);
+        setContentView(R.layout.form_assessment_info);
         CookieManager cookieManager = new CookieManager();
         CookieHandler.setDefault(cookieManager);
         spinner_orgUnit = findViewById(R.id.spinner_orgUnit);
@@ -50,10 +50,10 @@ public class AssessmentInfo extends AppCompatActivity {
         spinner_period = findViewById(R.id.spinner_period);
         spinner_facilityLevel = findViewById(R.id.spinner_facilityLevel);
 
-        spinnerData_orgUnit(spinner_orgUnit,"1");
-        spinnerData_assessType(spinner_assessType,"1");
-        spinnerData_period(spinner_period,"1");
-        spinnerData_facilityLevel(spinner_facilityLevel,"1");
+        spinnerData_orgUnit(spinner_orgUnit, "1");
+        spinnerData_assessType(spinner_assessType, "1");
+        spinnerData_period(spinner_period, "1");
+        spinnerData_facilityLevel(spinner_facilityLevel, "1");
 
 
         Button dataEntry = findViewById(R.id.bt_dataEntry);
@@ -68,7 +68,7 @@ public class AssessmentInfo extends AppCompatActivity {
         });
         SessionManager sessionManager = new SessionManager(getBaseContext());
         try {
-            getAssessmentType(AuthBuilder.encode(sessionManager.getUserName(),sessionManager.getPassword()));
+            getAssessmentType(AuthBuilder.encode(sessionManager.getUserName(), sessionManager.getPassword()));
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -178,6 +178,7 @@ public class AssessmentInfo extends AppCompatActivity {
             }
         });
     }
+
     public void spinnerData_facilityLevel(Spinner spinner, final String choice) {
         ArrayList<KeyValue> keyvalue = new ArrayList<>();
 
@@ -219,7 +220,7 @@ public class AssessmentInfo extends AppCompatActivity {
     public void submit() {
         closeProgressbar();
         new SessionManager(getBaseContext()).setLoggedIn(true);
-        Intent intent = new Intent(getBaseContext(), Dimensions.class);
+        Intent intent = new Intent(getBaseContext(), Dimensions_List.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
                 | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
@@ -236,18 +237,19 @@ public class AssessmentInfo extends AppCompatActivity {
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, UrlConstants.ASSESSMENT_TYPE_URL, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
-                Log.d("assessment type",response.toString());
+                Log.d("assessment type", response.toString());
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-error.printStackTrace();
+                error.printStackTrace();
             }
         }) {
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
                 Map<String, String> headers = new HashMap<>();
-                headers.put("Authorization ", encoded);
+                headers.put("Content-Type","application/json");
+                headers.put("Authorization", encoded);
                 return headers;
             }
         };

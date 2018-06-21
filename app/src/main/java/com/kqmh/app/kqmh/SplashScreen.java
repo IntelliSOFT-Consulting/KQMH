@@ -6,10 +6,8 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ProgressBar;
 
-import com.kqmh.app.kqmh.Activities.AssessmentType;
 import com.kqmh.app.kqmh.Activities.Login;
-import com.kqmh.app.kqmh.Activities.MainActivity;
-import com.kqmh.app.kqmh.Forms.AssessmentInfo;
+import com.kqmh.app.kqmh.Forms.Assessment_Info;
 
 
 
@@ -25,7 +23,7 @@ public class SplashScreen extends AppCompatActivity {
 
         SessionManager sessionManager = new SessionManager(getBaseContext());
         if(sessionManager.isLoggedIn()){
-            Intent intent = new Intent(getBaseContext(), AssessmentInfo.class);
+            Intent intent = new Intent(getBaseContext(), Assessment_Info.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
         }else{

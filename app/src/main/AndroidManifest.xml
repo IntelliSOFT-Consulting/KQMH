@@ -10,19 +10,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".Activities.MainActivity" />
         <activity android:name=".Activities.Login"/>
-        <activity android:name=".Forms.AssessmentInfo" />
-        <activity android:name=".Forms.Dimensions" />
-        <activity android:name=".Forms.KQMHAssessment" />
+        <activity android:name=".Forms.Assessment_Info" />
+        <activity android:name=".Forms.Dimensions_List" />
+        <activity android:name=".Forms.Dimension1" />
+        <activity android:name=".Forms.Dimension2" />
         <activity android:name=".Activities.AssessmentType" />
+
     </application>
 
 </manifest>
