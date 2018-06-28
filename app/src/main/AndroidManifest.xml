@@ -24,7 +24,10 @@
         <activity android:name=".Forms.Dimensions_List" />
         <activity android:name=".Forms.Dimension1" />
         <activity android:name=".Forms.Dimension2" />
-        <activity android:name=".Activities.AssessmentType" />
+        <activity android:name=".Forms.Dimension3" />
+        <activity android:name=".Forms.Dimension4" />
+        <activity android:name=".Forms.Dimension5" />
+        <activity android:name=".Forms.Dimension6" />
 
     </application>
 

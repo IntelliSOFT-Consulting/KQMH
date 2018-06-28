@@ -104,7 +104,7 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score"
+                                    android:id="@+id/spinner_score1"
                                     android:background="@color/dark_blue"
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
@@ -117,7 +117,7 @@
 
                             <EditText
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="0dp"
                                 android:layout_weight="1"
                                 android:padding="5dp"
                                 android:paddingBottom="155dp"
@@ -173,7 +173,7 @@
 
                             <EditText
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="0dp"
                                 android:layout_weight="1"
                                 android:padding="5dp"
                                 android:paddingBottom="155dp"
@@ -194,7 +194,7 @@
 
                             <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="0dp"
                                 android:layout_weight="1"
                                 android:background="@color/blue"
                                 android:padding="5dp"
@@ -247,7 +247,7 @@
 
                             <EditText
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="0dp"
                                 android:layout_weight="1"
                                 android:padding="5dp"
                                 android:paddingBottom="155dp"
@@ -303,7 +303,7 @@
 
                             <EditText
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="0dp"
                                 android:layout_weight="1"
                                 android:padding="5dp"
                                 android:paddingBottom="155dp"
@@ -359,7 +359,7 @@
 
                             <EditText
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="0dp"
                                 android:layout_weight="1"
                                 android:padding="5dp"
                                 android:paddingBottom="155dp"
@@ -380,7 +380,7 @@
 
                             <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="0dp"
                                 android:layout_weight="1"
                                 android:background="@color/blue"
                                 android:padding="5dp"
@@ -433,7 +433,7 @@
 
                             <EditText
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="0dp"
                                 android:layout_weight="1"
                                 android:padding="5dp"
                                 android:paddingBottom="155dp"
@@ -489,7 +489,7 @@
 
                             <EditText
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="0dp"
                                 android:layout_weight="1"
                                 android:padding="5dp"
                                 android:paddingBottom="155dp"
@@ -545,7 +545,7 @@
 
                             <EditText
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="0dp"
                                 android:layout_weight="1"
                                 android:padding="5dp"
                                 android:paddingBottom="155dp"
@@ -566,7 +566,7 @@
 
                             <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="0dp"
                                 android:layout_weight="1"
                                 android:background="@color/blue"
                                 android:padding="5dp"
@@ -619,7 +619,7 @@
 
                             <EditText
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="0dp"
                                 android:layout_weight="1"
                                 android:padding="5dp"
                                 android:paddingBottom="155dp"
@@ -675,7 +675,7 @@
 
                             <EditText
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="0dp"
                                 android:layout_weight="1"
                                 android:padding="5dp"
                                 android:paddingBottom="155dp"
@@ -696,7 +696,7 @@
 
                             <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="0dp"
                                 android:layout_weight="1"
                                 android:background="@color/blue"
                                 android:padding="5dp"
@@ -749,7 +749,7 @@
 
                             <EditText
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="0dp"
                                 android:layout_weight="1"
                                 android:padding="5dp"
                                 android:paddingBottom="155dp"
@@ -805,7 +805,7 @@
 
                             <EditText
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="0dp"
                                 android:layout_weight="1"
                                 android:padding="5dp"
                                 android:paddingBottom="155dp"
@@ -861,7 +861,7 @@
 
                             <EditText
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="0dp"
                                 android:layout_weight="1"
                                 android:padding="5dp"
                                 android:paddingBottom="155dp"
@@ -917,7 +917,7 @@
 
                             <EditText
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="0dp"
                                 android:layout_weight="1"
                                 android:padding="5dp"
                                 android:paddingBottom="155dp"
@@ -938,7 +938,7 @@
 
                             <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="0dp"
                                 android:layout_weight="1"
                                 android:background="@color/blue"
                                 android:padding="5dp"
@@ -991,7 +991,7 @@
 
                             <EditText
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="0dp"
                                 android:layout_weight="1"
                                 android:padding="5dp"
                                 android:paddingBottom="155dp"
@@ -1047,7 +1047,7 @@
 
                             <EditText
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="0dp"
                                 android:layout_weight="1"
                                 android:padding="5dp"
                                 android:paddingBottom="155dp"
@@ -1085,7 +1085,7 @@
 
                             <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="0dp"
                                 android:layout_weight="1"
                                 android:background="@color/blue"
                                 android:padding="5dp"
@@ -1138,7 +1138,7 @@
 
                             <EditText
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="0dp"
                                 android:layout_weight="1"
                                 android:padding="5dp"
                                 android:paddingBottom="155dp"
@@ -1194,7 +1194,7 @@
 
                             <EditText
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="0dp"
                                 android:layout_weight="1"
                                 android:padding="5dp"
                                 android:paddingBottom="155dp"
@@ -1250,7 +1250,7 @@
 
                             <EditText
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="0dp"
                                 android:layout_weight="1"
                                 android:padding="5dp"
                                 android:paddingBottom="155dp"
@@ -1306,7 +1306,7 @@
 
                             <EditText
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="0dp"
                                 android:layout_weight="1"
                                 android:padding="5dp"
                                 android:paddingBottom="155dp"
@@ -1327,7 +1327,7 @@
 
                             <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="0dp"
                                 android:layout_weight="1"
                                 android:background="@color/blue"
                                 android:padding="5dp"
@@ -1380,7 +1380,7 @@
 
                             <EditText
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="0dp"
                                 android:layout_weight="1"
                                 android:padding="5dp"
                                 android:paddingBottom="155dp"
@@ -1436,7 +1436,7 @@
 
                             <EditText
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="0dp"
                                 android:layout_weight="1"
                                 android:padding="5dp"
                                 android:paddingBottom="155dp"
@@ -1457,7 +1457,7 @@
 
                             <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="0dp"
                                 android:layout_weight="1"
                                 android:background="@color/blue"
                                 android:padding="5dp"
@@ -1510,7 +1510,7 @@
 
                             <EditText
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="0dp"
                                 android:layout_weight="1"
                                 android:padding="5dp"
                                 android:paddingBottom="155dp"
@@ -1531,7 +1531,7 @@
 
                             <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="0dp"
                                 android:layout_weight="1"
                                 android:background="@color/blue"
                                 android:padding="5dp"
@@ -1584,7 +1584,7 @@
 
                             <EditText
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="0dp"
                                 android:layout_weight="1"
                                 android:padding="5dp"
                                 android:paddingBottom="155dp"
@@ -1640,7 +1640,7 @@
 
                             <EditText
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="0dp"
                                 android:layout_weight="1"
                                 android:padding="5dp"
                                 android:paddingBottom="155dp"
@@ -1678,7 +1678,7 @@
 
                             <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="0dp"
                                 android:layout_weight="1"
                                 android:background="@color/blue"
                                 android:padding="5dp"
@@ -1731,7 +1731,7 @@
 
                             <EditText
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="0dp"
                                 android:layout_weight="1"
                                 android:padding="5dp"
                                 android:paddingBottom="155dp"
@@ -1787,7 +1787,7 @@
 
                             <EditText
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="0dp"
                                 android:layout_weight="1"
                                 android:padding="5dp"
                                 android:paddingBottom="155dp"

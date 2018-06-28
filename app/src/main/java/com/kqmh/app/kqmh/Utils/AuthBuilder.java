@@ -19,9 +19,11 @@ public class AuthBuilder {
     public static String encode( String username, String password ) throws Exception
     {
         String encodeValue = username + ":" + password;
-        String auth = "Basic " + Base64.encode(encodeValue.getBytes(), Base64.NO_WRAP);
+        byte[] encoded = Base64.encode(encodeValue.getBytes(), Base64.DEFAULT);
+        String auth = "Basic " + new String(encoded);
 
         Log.d("encoded", auth);
+
         return  auth ;
     }
 

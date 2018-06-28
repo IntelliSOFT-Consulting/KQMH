@@ -24,7 +24,7 @@ public class Dimensions_List extends AppCompatActivity {
 
         spinner_dim = findViewById(R.id.spinner_dim);
 
-        spinnerData_dim(spinner_dim,"1");
+        spinnerData_dim(spinner_dim,"0");
     }
 
     public void spinnerData_dim(Spinner spinner, final String choice) {
@@ -50,7 +50,6 @@ public class Dimensions_List extends AppCompatActivity {
         ArrayAdapter<KeyValue> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, keyvalue);
         spinner.setAdapter(adapter);
         adapter.notifyDataSetChanged();
-        //occupationSpinner.setSelection(adapter.getPosition(keyvalue.get(2)));//Optional to set the selected item.
 
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -76,6 +75,48 @@ public class Dimensions_List extends AppCompatActivity {
                         intentDimension3.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
                                 | Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intentDimension3);
+                        break;
+                    case 4:
+                        Intent intentDimension4 = new Intent(getBaseContext(), Dimension4.class);
+                        intentDimension4.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
+                                | Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(intentDimension4);
+                        break;
+                    case 5:
+                        Intent intentDimension5 = new Intent(getBaseContext(), Dimension5.class);
+                        intentDimension5.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
+                                | Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(intentDimension5);
+                        break;
+                    case 6:
+                        Intent intentDimension6 = new Intent(getBaseContext(), Dimension6.class);
+                        intentDimension6.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
+                                | Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(intentDimension6);
+                        break;
+                    case 7:
+                        Intent intentDimension7 = new Intent(getBaseContext(), Dimension7.class);
+                        intentDimension7.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
+                                | Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(intentDimension7);
+                        break;
+                    case 8:
+                        Intent intentDimension8 = new Intent(getBaseContext(), Dimension8.class);
+                        intentDimension8.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
+                                | Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(intentDimension8);
+                        break;
+                    case 9:
+                        Intent intentDimension9 = new Intent(getBaseContext(), Dimension9.class);
+                        intentDimension9.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
+                                | Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(intentDimension9);
+                        break;
+                    case 10:
+                        Intent intentDimension10 = new Intent(getBaseContext(), Dimension10.class);
+                        intentDimension10.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
+                                | Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(intentDimension10);
                         break;
                 }
 
