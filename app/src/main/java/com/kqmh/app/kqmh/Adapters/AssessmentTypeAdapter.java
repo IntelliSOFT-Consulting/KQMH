@@ -9,35 +9,33 @@ import android.widget.ArrayAdapter;
 import android.widget.CheckedTextView;
 import android.widget.TextView;
 
-import com.kqmh.app.kqmh.Models.AssesmentCombo;
+import com.kqmh.app.kqmh.Models.AssessmentTypeCombo;
 
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by ekirapa on 6/28/18 .
- */
-public class AssesmentAdapter extends ArrayAdapter<AssesmentCombo> {
-    private Context context;
-    private List<AssesmentCombo> assesmentCombos = new ArrayList<>();
 
-    public AssesmentAdapter(@NonNull Context context, int resource) {
+public class AssessmentTypeAdapter extends ArrayAdapter<AssessmentTypeCombo> {
+    private Context context;
+    private List<AssessmentTypeCombo> assessmentCombos = new ArrayList<>();
+
+    public AssessmentTypeAdapter(@NonNull Context context, int resource) {
         super(context, resource);
     }
 
-    public AssesmentAdapter(@NonNull Context context, int resource, List<AssesmentCombo> assesmentCombos) {
+    public AssessmentTypeAdapter(@NonNull Context context, int resource, List<AssessmentTypeCombo> assessmentTypeCombos) {
         super(context, resource);
-        this.assesmentCombos = assesmentCombos;
+        this.assessmentCombos = assessmentTypeCombos;
     }
 
     @Override
     public int getCount() {
-        return assesmentCombos.size();
+        return assessmentCombos.size();
     }
 
     @Override
-    public AssesmentCombo getItem(int position) {
-        return assesmentCombos.get(position);
+    public AssessmentTypeCombo getItem(int position) {
+        return assessmentCombos.get(position);
     }
 
     @Override
@@ -51,7 +49,7 @@ public class AssesmentAdapter extends ArrayAdapter<AssesmentCombo> {
         // I created a dynamic TextView here, but you can reference your own  custom layout for each spinner item
         CheckedTextView label = (CheckedTextView) super.getView(position, convertView, parent);
         label.setTextColor(Color.BLACK);
-        label.setText(assesmentCombos.get(position).getDisplayName());
+        label.setText(assessmentCombos.get(position).getDisplayName());
 
         return label;
     }
@@ -61,7 +59,7 @@ public class AssesmentAdapter extends ArrayAdapter<AssesmentCombo> {
                                 @NonNull ViewGroup parent) {
         TextView label = (TextView) super.getDropDownView(position, convertView, parent);
         label.setTextColor(Color.BLACK);
-        label.setText(assesmentCombos.get(position).getDisplayName());
+        label.setText(assessmentCombos.get(position).getDisplayName());
 
         return label;
     }

@@ -16,8 +16,8 @@
     <string name="dataEntry">DATA ENTRY</string>
     <string name="spinner_facilityLevel">Facility Level</string>
     <string name="spinner_period">Quarter Period</string>
-    <string name="spinner_assessType">Assessment Type</string>
-    <string name="spinner_orgUnit">Organisational Unit</string>
+    <string name="spinner_AssessmentType">Assessment Type</string>
+    <string name="spinner_OrganisationUnit">Organisational Unit</string>
 
     <!-- stds strings -->
     <string name="spinner_dim">KQMH Dimensions</string>

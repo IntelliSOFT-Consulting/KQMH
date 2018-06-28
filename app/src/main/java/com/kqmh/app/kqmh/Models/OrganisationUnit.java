@@ -6,13 +6,10 @@ import com.raizlabs.android.dbflow.annotation.PrimaryKey;
 import com.raizlabs.android.dbflow.annotation.Table;
 import com.raizlabs.android.dbflow.structure.BaseModel;
 
-/**
- * Created by ekirapa on 6/28/18 .
- */
 
-@Table(database = AppDatabase.class, name = "assesmentOptions")
-public class AssesmentCombo extends BaseModel {
-    public AssesmentCombo() {
+@Table(database = AppDatabase.class, name = "OrganisationUnits")
+public class OrganisationUnit extends BaseModel {
+    public OrganisationUnit() {
 
     }
 
