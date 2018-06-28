@@ -17,6 +17,7 @@ import com.android.volley.error.AuthFailureError;
 import com.android.volley.error.VolleyError;
 import com.android.volley.request.JsonObjectRequest;
 import com.google.gson.Gson;
+import com.kqmh.app.kqmh.Adapters.AssesmentAdapter;
 import com.kqmh.app.kqmh.Models.AssesmentCombo;
 import com.kqmh.app.kqmh.R;
 import com.kqmh.app.kqmh.SessionManager;
@@ -120,7 +121,6 @@ public class Assessment_Info extends AppCompatActivity {
 
     public void spinnerData_assessType(Spinner spinner, final String choice) {
         ArrayList<KeyValue> keyvalue = new ArrayList<>();
-        List<AssesmentCombo> assesmentComboList = SQLite.select().from(AssesmentCombo.class).queryList();
 
         // adding each child node to HashMap key => value
         keyvalue.add(new KeyValue(0, "Select"));
@@ -130,16 +130,16 @@ public class Assessment_Info extends AppCompatActivity {
 
 
         //fill data in spinner
-        ArrayAdapter<AssesmentCombo> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, assesmentComboList);
+        AssesmentAdapter adapter = new AssesmentAdapter(this,android.R.layout.simple_spinner_dropdown_item,categoryOptions);
         spinner.setAdapter(adapter);
-        adapter.notifyDataSetChanged();
+        //adapter.notifyDataSetChanged();
         //occupationSpinner.setSelection(adapter.getPosition(keyvalue.get(2)));//Optional to set the selected item.
 
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
-                KeyValue value = (KeyValue) parent.getSelectedItem();
+
                 if (choice.matches("1")) {
                     //occupation = value.getId();
                 } else if (choice.matches("2")) {
@@ -253,7 +253,7 @@ public class Assessment_Info extends AppCompatActivity {
                     Gson gson = new Gson();
                     for (int i = 0; i < jsonArray.length(); i++) {
                         AssesmentCombo combo = gson.fromJson(jsonArray.getJSONObject(i).toString(), AssesmentCombo.class);
-                        FlowManager.getModelAdapter(AssesmentCombo.class).save(combo);
+                        categoryOptions.add(combo);
                     }
                     closeProgressbar();
                     spinnerData_assessType(spinner_assessType, "1");

@@ -39,4 +39,8 @@ public class AssesmentCombo extends BaseModel {
     public void setDisplayName(String displayName) {
         this.displayName = displayName;
     }
+
+    public String getName() {
+        return this.displayName;
+    }
 }
