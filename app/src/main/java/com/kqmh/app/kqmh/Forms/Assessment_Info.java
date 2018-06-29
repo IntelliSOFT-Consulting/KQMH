@@ -41,6 +41,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import static com.kqmh.app.kqmh.Utils.UrlConstants.ORGANISATION_UNIT_URL;
+
 public class Assessment_Info extends AppCompatActivity {
 
     private Spinner spinner_OrganisationUnit;
@@ -81,7 +83,10 @@ public class Assessment_Info extends AppCompatActivity {
         SessionManager sessionManager = new SessionManager(getBaseContext());
 
         try {
-            getOrganisationUnit(AuthBuilder.encode(sessionManager.getUserName(), sessionManager.getPassword()));
+            for(int i=1;i<350;i++) {
+                String url = ORGANISATION_UNIT_URL.replace("[number]", String.valueOf(i));
+                getOrganisationUnit(AuthBuilder.encode(sessionManager.getUserName(), sessionManager.getPassword()), url);
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -91,8 +96,6 @@ public class Assessment_Info extends AppCompatActivity {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-
 
     }
 
@@ -114,10 +117,10 @@ public class Assessment_Info extends AppCompatActivity {
         });
     }
 
-    private void getOrganisationUnit(final String encoded) {
+    private void getOrganisationUnit(final String encoded,final String url) {
         Log.d("Auth", encoded);
         progressDialog.show();
-        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, UrlConstants.ORGANISATION_UNIT_URL, null, new Response.Listener<JSONObject>() {
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
                 Log.d("organisation unit", response.toString());
@@ -143,7 +146,7 @@ public class Assessment_Info extends AppCompatActivity {
             }
         }) {
             @Override
-            public Map<String, String> getHeaders() throws AuthFailureError {
+            public Map<String, String> getHeaders() {
                 Map<String, String> headers = new HashMap<>();
                 //headers.put("Content-Type","application/json");
                 Log.d("Encoded", encoded);
@@ -201,7 +204,7 @@ public class Assessment_Info extends AppCompatActivity {
             }
         }) {
             @Override
-            public Map<String, String> getHeaders() throws AuthFailureError {
+            public Map<String, String> getHeaders() {
                 Map<String, String> headers = new HashMap<>();
                 //headers.put("Content-Type","application/json");
                 Log.d("Encoded", encoded);

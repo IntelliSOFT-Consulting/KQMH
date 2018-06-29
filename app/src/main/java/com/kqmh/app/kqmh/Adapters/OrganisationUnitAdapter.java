@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.CheckedTextView;
+import android.widget.Filter;
 import android.widget.TextView;
 
 import com.kqmh.app.kqmh.Models.OrganisationUnit;
@@ -18,6 +19,7 @@ import java.util.List;
 public class OrganisationUnitAdapter extends ArrayAdapter<OrganisationUnit> {
     private Context context;
     private List<OrganisationUnit> OrganisationUnit = new ArrayList<>();
+
 
     public OrganisationUnitAdapter(@NonNull Context context, int resource) {
         super(context, resource);
