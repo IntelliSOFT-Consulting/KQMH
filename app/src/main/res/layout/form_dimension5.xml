@@ -22,6 +22,9 @@
 
             <include layout="@layout/header"/>
 
+            <!-- button section -->
+            <include layout="@layout/nav_buttons"/>
+
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -105,7 +108,7 @@
                                 android:layout_weight="1"
                                 android:background="@color/grey"
                                 android:padding="5dp"
-                                android:text="@string/Rdim4.2.1.1"
+                                android:text="@string/Rdim5.1.1.1"
                                 android:textColor="@color/black"
                                 android:textSize="16sp" />
 
@@ -161,7 +164,7 @@
                                 android:layout_weight="1"
                                 android:background="@color/grey"
                                 android:padding="5dp"
-                                android:text="@string/Rdim4.2.1.1"
+                                android:text="@string/Rdim5.1.1.2"
                                 android:textColor="@color/black"
                                 android:textSize="16sp" />
 
@@ -252,7 +255,7 @@
                                 android:layout_weight="1"
                                 android:background="@color/grey"
                                 android:padding="5dp"
-                                android:text="@string/Rdim4.2.1.1"
+                                android:text="@string/Rdim5.2.1.1"
                                 android:textColor="@color/black"
                                 android:textSize="16sp" />
 
@@ -308,7 +311,7 @@
                                 android:layout_weight="1"
                                 android:background="@color/grey"
                                 android:padding="5dp"
-                                android:text="@string/Rdim4.2.1.1"
+                                android:text="@string/Rdim5.2.1.2"
                                 android:textColor="@color/black"
                                 android:textSize="16sp" />
 
@@ -399,7 +402,7 @@
                                 android:layout_weight="1"
                                 android:background="@color/grey"
                                 android:padding="5dp"
-                                android:text="@string/Rdim4.2.1.1"
+                                android:text="@string/Rdim5.3.1.1"
                                 android:textColor="@color/black"
                                 android:textSize="16sp" />
 
@@ -455,7 +458,7 @@
                                 android:layout_weight="1"
                                 android:background="@color/grey"
                                 android:padding="5dp"
-                                android:text="@string/Rdim4.2.1.1"
+                                android:text="@string/Rdim5.3.1.2"
                                 android:textColor="@color/black"
                                 android:textSize="16sp" />
 
@@ -511,7 +514,7 @@
                                 android:layout_weight="1"
                                 android:background="@color/grey"
                                 android:padding="5dp"
-                                android:text="@string/Rdim4.2.1.1"
+                                android:text="@string/Rdim5.3.1.3"
                                 android:textColor="@color/black"
                                 android:textSize="16sp" />
 
@@ -567,7 +570,7 @@
                                 android:layout_weight="1"
                                 android:background="@color/grey"
                                 android:padding="5dp"
-                                android:text="@string/Rdim4.2.1.1"
+                                android:text="@string/Rdim5.3.1.4"
                                 android:textColor="@color/black"
                                 android:textSize="16sp" />
 
@@ -623,7 +626,7 @@
                                 android:layout_weight="1"
                                 android:background="@color/grey"
                                 android:padding="5dp"
-                                android:text="@string/Rdim4.2.1.1"
+                                android:text="@string/Rdim5.3.1.4"
                                 android:textColor="@color/black"
                                 android:textSize="16sp" />
 
@@ -669,7 +672,7 @@
             </android.support.v7.widget.CardView>
 
             <!-- button section -->
-            <include layout="@layout/next_button"/>
+            <include layout="@layout/dims_button"/>
 
         </LinearLayout>
 

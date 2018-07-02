@@ -29,6 +29,13 @@
         <activity android:name=".Forms.Dimension4" />
         <activity android:name=".Forms.Dimension5" />
         <activity android:name=".Forms.Dimension6" />
+        <activity android:name=".Forms.Dimension7" />
+        <activity android:name=".Forms.Dimension8" />
+        <activity android:name=".Forms.Dimension9" />
+        <activity android:name=".Forms.Dimension10" />
+        <activity android:name=".Forms.Dimension11_List" />
+        <activity android:name=".Forms.Dimension11_1" />
+        <activity android:name=".Forms.Dimension11_2" />
 
     </application>
 

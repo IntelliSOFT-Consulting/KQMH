@@ -22,6 +22,9 @@
 
             <include layout="@layout/header"/>
 
+            <!-- button section -->
+            <include layout="@layout/nav_buttons"/>
+
                 <android.support.v7.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -1805,7 +1808,7 @@
                 </android.support.v7.widget.CardView>
 
             <!-- button section -->
-            <include layout="@layout/next_button"/>
+            <include layout="@layout/dims_button"/>
 
         </LinearLayout>
 

@@ -1,4 +1,6 @@
 package com.kqmh.app.kqmh.Forms;
 
-public class Dimension11_2 {
+import android.support.v7.app.AppCompatActivity;
+
+public class Dimension11_2 extends AppCompatActivity{
 }

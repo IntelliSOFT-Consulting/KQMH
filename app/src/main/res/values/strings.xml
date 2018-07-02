@@ -21,6 +21,7 @@
 
     <!-- stds strings -->
     <string name="spinner_dim">KQMH Dimensions</string>
+    <string name="spinner_dim11">Dimension 11 : Services</string>
 
     <!-- scores strings -->
     <string name="spinner_scores">Scores</string>
@@ -28,6 +29,8 @@
     <!-- Slider strings -->
     <string name="title_activity_welcome">Home Screen</string>
     <string name="next">NEXT</string>
+    <string name="prev">PREV</string>
+    <string name="dims">Dimensions</string>
     <string name="skip">SKIP</string>
     <string name="start">GOT IT</string>
 
@@ -408,9 +411,9 @@
 
     <string name="Std8.4">8.4 The health facility shall follow a documented procedure for handover of referred patients</string>
     <string name="Rdim8.4.1">The health facility has a documented procedure for receiving referred patients. This includes but is not limited to: (MOV-Documented protocols and observation where possible)</string>
-    <string name="Rdim8.4.2">Location for receiving referred patients</string>
-    <string name="Rdim8.4.3">Patient admission to the relevant unit and attendance by appropriate specialist</string>
-    <string name="Rdim8.4.4">Involvement of patients and their escorts in handover processes</string>
+    <string name="Rdim8.4.1.1">Location for receiving referred patients</string>
+    <string name="Rdim8.4.1.2">Patient admission to the relevant unit and attendance by appropriate specialist</string>
+    <string name="Rdim8.4.1.3">Involvement of patients and their escorts in handover processes</string>
 
     <string name="Std8.5">8.5 Data on referrals/transfers is collected and used to continuously improve patient care and strengthen the referral system.</string>
     <string name="Rdim8.5.1">The facility collects, analyses and uses the data to continuously improve patient care and strengthen the referral system (MOV- referral audit, and minutes from HMT discussing referral data)</string>

@@ -118,6 +118,12 @@ public class Dimensions_List extends AppCompatActivity {
                                 | Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intentDimension10);
                         break;
+                    case 11:
+                        Intent intentDimension11_List = new Intent(getBaseContext(), Dimension11_List.class);
+                        intentDimension11_List.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
+                                | Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(intentDimension11_List);
+                        break;
                 }
 
             }

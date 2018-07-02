@@ -15,19 +15,52 @@ public class Dimension8 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.form_dimension8);
 
-        Button nextStd = findViewById(R.id.btn_next);
-        nextStd.setOnClickListener(new View.OnClickListener() {
+        Button prevDim = findViewById(R.id.btn_prev);
+        prevDim.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                submit();
+                prev_submit();
+            }
+        });
+
+        Button dims = findViewById(R.id.btn_dims);
+        dims.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dims_submit();
+            }
+        });
+
+        Button nextDim = findViewById(R.id.btn_next);
+        nextDim.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                next_submit();
             }
         });
 
     }
 
-    public void submit() {
+
+    public void prev_submit() {
+        new SessionManager(getBaseContext()).setLoggedIn(true);
+        Intent intent = new Intent(getBaseContext(), Dimension7.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
+                | Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+    }
+
+    public void dims_submit() {
         new SessionManager(getBaseContext()).setLoggedIn(true);
         Intent intent = new Intent(getBaseContext(), Dimensions_List.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
+                | Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+    }
+
+    public void next_submit() {
+        new SessionManager(getBaseContext()).setLoggedIn(true);
+        Intent intent = new Intent(getBaseContext(), Dimension9.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
                 | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
