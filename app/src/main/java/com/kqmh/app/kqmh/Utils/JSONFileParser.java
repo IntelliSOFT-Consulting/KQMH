@@ -5,8 +5,8 @@ import android.content.Context;
 import java.io.IOException;
 import java.io.InputStream;
 
-public class JSONParser {
-    public String loadJSONFromAsset(Context context) {
+public class JSONFileParser {
+    public static String loadJSONFromAsset(Context context) {
         String json = null;
         try {
             InputStream is = context.getAssets().open("trial.json");
