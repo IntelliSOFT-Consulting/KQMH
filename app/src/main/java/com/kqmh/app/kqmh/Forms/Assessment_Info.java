@@ -29,6 +29,7 @@ import com.kqmh.app.kqmh.Utils.AuthBuilder;
 import com.kqmh.app.kqmh.Utils.UrlConstants;
 import com.kqmh.app.kqmh.Utils.VolleySingleton;
 import com.kqmh.app.kqmh.Models.KeyValue;
+import com.toptoche.searchablespinnerlibrary.SearchableSpinner;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -45,13 +46,14 @@ import static com.kqmh.app.kqmh.Utils.UrlConstants.ORGANISATION_UNIT_URL;
 
 public class Assessment_Info extends AppCompatActivity {
 
-    private Spinner spinner_OrganisationUnit;
+    private SearchableSpinner spinner_OrganisationUnit;
     private Spinner spinner_AssessmentType;
     private Spinner spinner_period;
     private Spinner spinner_facilityLevel;
     private ProgressDialog progressDialog;
     List<AssessmentTypeCombo> categoryOptions = new ArrayList<>();
     List<OrganisationUnit> OrganisationUnit = new ArrayList<>();
+    List<String> orgUnitsNames = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +64,8 @@ public class Assessment_Info extends AppCompatActivity {
         CookieHandler.setDefault(cookieManager);
 
         spinner_OrganisationUnit = findViewById(R.id.spinner_OrganisationUnit);
+        spinner_OrganisationUnit.setTitle("Organizational Units");
+        spinner_OrganisationUnit.setPositiveButton("Cancel");
         spinner_AssessmentType = findViewById(R.id.spinner_AssessmentType);
         spinner_period = findViewById(R.id.spinner_period);
         spinner_facilityLevel = findViewById(R.id.spinner_facilityLevel);
@@ -101,7 +105,7 @@ public class Assessment_Info extends AppCompatActivity {
 
     public void spinnerData_OrganisationUnit(Spinner spinner_OrganisationUnit, final String choice) {
         //fill data in spinner
-        OrganisationUnitAdapter adapter = new OrganisationUnitAdapter(this, android.R.layout.simple_spinner_dropdown_item, OrganisationUnit);
+        OrganisationUnitAdapter adapter = new OrganisationUnitAdapter(this, android.R.layout.simple_spinner_dropdown_item, orgUnitsNames);
         spinner_OrganisationUnit.setAdapter(adapter);
         spinner_OrganisationUnit.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -130,6 +134,7 @@ public class Assessment_Info extends AppCompatActivity {
                     for (int i = 0; i < jsonArray.length(); i++) {
                         OrganisationUnit org = gson.fromJson(jsonArray.getJSONObject(i).toString(), OrganisationUnit.class);
                         OrganisationUnit.add(org);
+                        orgUnitsNames.add(org.getDisplayName());
                     }
                     closeProgressbar();
                     spinnerData_OrganisationUnit(spinner_OrganisationUnit, "1");
