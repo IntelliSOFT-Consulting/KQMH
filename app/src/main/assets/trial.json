@@ -1,0 +1,73 @@
+
+{
+    "dataSetElements":[ {
+        "dataElement": {
+            "name": "CDIM_4.8_Availability of changing rooms for staff\n(MOV-observation)", "id": "c4mdectUuJD"
+        }
+    }
+    ,
+    {
+        "dataElement": {
+            "name":"RDIM_11.7.7_All post anaesthesia patients are accompanied to the recovery room and adequately handed over to the nursing staff by the anaesthesia care provider.",
+            "id":"MJbP1UGlKdp",
+            "optionSet": {
+                "name":"KQMH_3 Scoring Options(Yes, No, P)",
+                "options":[ {
+                    "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+                }
+                ,
+                {
+                    "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+                }
+                ,
+                {
+                    "code": "0", "name": "No", "id": "owtmpRi3xjk"
+                }
+                ]
+            }
+        }
+    }
+    ,
+    {
+        "dataElement": {
+            "name": "CDIM_11.8.2_Mechanism of responding to client complaints in place\n(MOV- Complaint and compliments box/ book, evidence of analysis of feedback results)", "id": "MOhLffrmZ6w"
+        }
+    }
+    ,
+    {
+        "dataElement": {
+            "name": "CDIM_11.14.1_Staff working in the mortuary have relevant training\n(MOV-HR records)", "id": "Hth2sgegUxp"
+        }
+    }
+    ,
+    {
+        "dataElement": {
+            "name": "CDIM_11.9.5_Availability of standard protocol for the management of neonatal sepsis(MOV-Access to guidelines)", "id": "YDXos8HamxQ"
+        }
+    }
+    ,
+    {
+        "dataElement": {
+            "name": "CDIM_4.4.1_Facility reports incidents to allow corrective actions (MOV- periodic reports)", "id": "nfRTUqdY59M"
+        }
+    }
+    ,
+    {
+        "dataElement": {
+            "name":"RDIM_4.4.1_Safe location for hazardous materials and wastes\n(MOV-physical facility or contract for outsourced services)",
+            "id":"EVksz6eD3Ph",
+            "optionSet": {
+                "name":"KQMH_1 Scoring Options(Yes, No)",
+                "options":[ {
+                    "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+                }
+                ,
+                {
+                    "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+                }
+                ]
+            }
+        }
+    }
+]
+}
