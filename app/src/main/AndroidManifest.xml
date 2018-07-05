@@ -4,13 +4,19 @@
     <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
+
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:name=".KQMH"
+        android:name="com.orm.SugarApp"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <meta-data android:name="DATABASE" android:value="kqmh.db" />
+        <meta-data android:name="VERSION" android:value="1" />
+        <meta-data android:name="QUERY_LOG" android:value="true" />
+        <meta-data android:name="DOMAIN_PACKAGE_NAME" android:value="com.kqmh.app.kqmh" />
 
         <activity android:name=".SplashScreen">
             <intent-filter>
@@ -23,19 +29,31 @@
         <activity android:name=".Activities.Login"/>
         <activity android:name=".Forms.Assessment_Info" />
         <activity android:name=".Forms.Dimensions_List" />
-        <activity android:name=".Forms.Dimension1" />
-        <activity android:name=".Forms.Dimension2" />
-        <activity android:name=".Forms.Dimension3" />
-        <activity android:name=".Forms.Dimension4" />
-        <activity android:name=".Forms.Dimension5" />
-        <activity android:name=".Forms.Dimension6" />
-        <activity android:name=".Forms.Dimension7" />
-        <activity android:name=".Forms.Dimension8" />
-        <activity android:name=".Forms.Dimension9" />
-        <activity android:name=".Forms.Dimension10" />
+        <activity android:name=".Forms.Dimension1"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".Forms.Dimension2"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".Forms.Dimension3"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".Forms.Dimension4"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".Forms.Dimension5"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".Forms.Dimension6"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".Forms.Dimension7"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".Forms.Dimension8"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".Forms.Dimension9"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".Forms.Dimension10"
+            android:windowSoftInputMode="stateHidden"/>
         <activity android:name=".Forms.Dimension11_List" />
-        <activity android:name=".Forms.Dimension11_1" />
-        <activity android:name=".Forms.Dimension11_2" />
+        <activity android:name=".Forms.Dimension11_1"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".Forms.Dimension11_2"
+            android:windowSoftInputMode="stateHidden"/>
 
     </application>
 

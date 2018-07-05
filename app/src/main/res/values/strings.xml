@@ -595,6 +595,6 @@
     <string name="Rdim11.2.9.2"></string>
     <string name="Rdim11.2.9.3"></string>
 
-
+    <string name="spinner_score">spinner_score%1$d</string>
 </resources>
 

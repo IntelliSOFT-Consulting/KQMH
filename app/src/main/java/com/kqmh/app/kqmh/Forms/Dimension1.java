@@ -2,6 +2,7 @@ package com.kqmh.app.kqmh.Forms;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -25,11 +26,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Dimension1 extends AppCompatActivity {
+
     List<Spinner> spinnerList = new ArrayList<>();
-private ProgressDialog progressDialog;
+    private ProgressDialog progressDialog;
+
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.form_dimension1);
+
         progressDialog = new ProgressDialog(this);
         progressDialog.setTitle("Fetching Scores");
         progressDialog.setCancelable(false);
@@ -57,11 +62,22 @@ private ProgressDialog progressDialog;
                 next_submit();
             }
         });
-        spinnerList.add((Spinner) findViewById(R.id.spinner_score1));
+
+
+
+        for(int value=1;value<28;value++){
+            Resources res  = getResources();
+            String spinnerParse = String.format(res.getString(R.string.spinner_score),value);
+
+            spinnerList.add((Spinner) findViewById(getResources().getIdentifier(spinnerParse,"id",getPackageName())));
+            Log.d("Spinner Tag",spinnerList.toString()+"");
+        }
+
+        //spinnerList.add((Spinner) findViewById(R.id.spinner_score1));
 
         try {
             populateSpinners();
-        } catch (JSONException e) {
+        } catch (Exception e) {
             e.printStackTrace();
             progressDialog.cancel();
         }
