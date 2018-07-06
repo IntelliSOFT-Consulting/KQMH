@@ -16,11 +16,12 @@
     <string name="dataEntry">DATA ENTRY</string>
     <string name="spinner_facilityLevel">Facility Level</string>
     <string name="spinner_period">Quarter Period</string>
-    <string name="spinner_assessType">Assessment Type</string>
-    <string name="spinner_orgUnit">Organisational Unit</string>
+    <string name="spinner_AssessmentType">Assessment Type</string>
+    <string name="spinner_OrganisationUnit">Organisational Unit</string>
 
     <!-- stds strings -->
     <string name="spinner_dim">KQMH Dimensions</string>
+    <string name="spinner_dim11">Dimension 11 : Services</string>
 
     <!-- scores strings -->
     <string name="spinner_scores">Scores</string>
@@ -28,6 +29,8 @@
     <!-- Slider strings -->
     <string name="title_activity_welcome">Home Screen</string>
     <string name="next">NEXT</string>
+    <string name="prev">PREV</string>
+    <string name="dims">Dimensions</string>
     <string name="skip">SKIP</string>
     <string name="start">GOT IT</string>
 
@@ -50,13 +53,11 @@
     <string name="request">Request</string>
 
 
-
-
     <!-- leadership strings -->
 
     <string name="Dim1">Leadership</string>
 
-    <string name="Std1.1">Leadership and Management Responsibilities</string>
+    <string name="Std1.1">1.1 Leadership and Management Responsibilities</string>
 
     <string name="Std1.1.1">1.1.1 The health facility management shall ensure compliance with regulatory requirements.</string>
     <string name="Rdim1.1.1.1">Facility has a valid licence or is gazetted to offer healthcare services (MOV- Gazette notice /licence)</string>
@@ -86,8 +87,7 @@
     <string name="Rdim1.1.6.1">Documented procedure for administrative consent for undertaking of health interventions and research (MOV-Documented procedure)</string>
     <string name="Rdim1.1.6.2">Documented procedure for monitoring adverse effect of health interventions and research (MOV-Documented procedure)</string>
 
-
-    <string name="Std1.2"> Management Review and Continuous Improvement</string>
+    <string name="Std1.2">1.2 Management Review and Continuous Improvement</string>
 
     <string name="Std1.2.1">1.2.1 Management shall continually review the facility operations</string>
     <string name="Rdim1.2.1.1">Facility management team meets on a monthly basis (MOV- Minutes)</string>
@@ -106,12 +106,495 @@
     <string name="Rdim1.2.4.1">The facility evaluates benefits of improvement interventions at least once annually (MOV- evaluation report)</string>
     <string name="Rdim1.2.4.2">The facility disseminates success stories and lessons learnt at least once annually. (MOV- minutes/report of dissemination meetings/ brochures/ social media/ internet links )</string>
 
-
-    <string name="Std1.3">Risk Management</string>
+    <string name="Std1.3">1.3 Risk Management</string>
 
     <string name="Std1.3.1">1.3.1 The facility has put in place measures to reduce or eliminate clinical risks</string>
     <string name="Rdim1.3.1.1">The facility conducts risk assessment for all clinical services (MOV- risk assessment report)</string>
     <string name="Rdim1.3.1.2">The facility has put in place measures to mitigate the identified risks (MOV- mitigation plan/report)</string>
 
+
+    <!-- HRM strings -->
+
+    <string name="Dim2">Human Resource Management and Development</string>
+
+    <string name="Std2.1">2.1 The health facility is adequately staffed as per the established HRH norms and standards.</string>
+    <string name="Rdim2.1.1">Facility is staffed as per established HRH norms (MOV-HR records)</string>
+    <string name="Rdim2.1.2">Facility has a documented procedure for task shifting or responsibility sharing between different professional cadres (MOV-documented protocol)</string>
+
+    <string name="Std2.2">2.2 The health facility maintains an updated inventory of all staff.</string>
+    <string name="Rdim2.2.1">Facility has an up to date personnel file that contains the following at a minimum: - Registration with relevant professional bodies. (MOV-personnel file with listed documents. Sample 5 files)</string>
+    <string name="Rdim2.2.2">Relevant academic certificates (MOV-personnel file with listed documents. Sample 5 files)</string>
+    <string name="Rdim2.2.3">Current curriculum vitae (MOV-personnel file with listed documents. Sample 5 files)</string>
+    <string name="Rdim2.2.4">Letters of appointment (MOV-personnel file with listed documents. Sample 5 files)</string>
+    <string name="Rdim2.2.5">Signed job description (MOV-personnel file with listed documents. Sample 5 files)</string>
+
+    <string name="Std2.3">2.3 The health facility implements staff performance appraisal.</string>
+    <string name="Rdim2.3.1">Management staff have signed their annual performance contracts (MOV- HR records for updated performance contracts)</string>
+    <string name="Rdim2.3.2">Staff appraised at least once in a year (MOV-personnel file with appraisal documents)</string>
+    <string name="Rdim2.3.3">Recommendations of the appraisals implemented by the HR (MOV-documented actions on recommendations)</string>
+
+    <string name="Std2.4">2.4 Facility staff engages in continuous medical education.</string>
+    <string name="Rdim2.4.1">Facility implements a continuous medical education programme (MOV- HR records and schedule and file with minutes on CME sessions)</string>
+    <string name="Rdim2.4.2">All staff who provide direct patient care have received training in basic cardiopulmonary resuscitation and the training is repeated at least every two years (MOV- HR records)</string>
+
+    <string name="Std2.5">2.5 Facility has staff motivation programme</string>
+    <string name="Rdim2.5.1">Facility has a system for recognition and/or rewards of high achievers (MOV-Administration records)</string>
+    <string name="Rdim2.5.2">Team building activity carried out at least once per year (MOV-Administration records)</string>
+    <string name="Rdim2.5.3">Motivation plan communicated to all staff (MOV- HR records)</string>
+
+    <string name="Std2.6">2.6 There shall be an induction into service programme for all new staff.</string>
+    <string name="Rdim2.6.1">There is an induction schedule for all the new staff. Induction to include but not limited to the organizational structure, work area, staff facilities, health and safety requirements and occupational hazards (MOV-documented schedule)</string>
+    <string name="Rdim2.6.2">Induction report countersigned by new staff and by the designated staff in the various departments within the health facility (MOV-Induction reports filed in the staff files)</string>
+
+    <string name="Std2.7">2.7 The health facility shall allocate funds for training of staff as informed by capacity needs</string>
+    <string name="Rdim2.7.1">Annual training needs assessment conducted and documented (MOV-Training needs assessment for the current calendar or financial year)</string>
+    <string name="Rdim2.7.2">Costed training schedule in place (MOV-training schedule)</string>
+    <string name="Rdim2.7.3">Budget allocated for training (MOV-administration records)</string>
+
+    <string name="Std2.8">2.8 The health facility has in place a mechanism for knowledge management.</string>
+    <string name="Rdim2.8.1">The facility has a documented procedure for sharing of new knowledge which includes schedule of knowledge management activities including feedback from training, conference reports, learning sessions(MOV-documented procedure)</string>
+
+    <string name="Std2.9">2.9 The facility provides internship programme in accordance to MOH and other relevant guidelines</string>
+    <string name="Rdim2.9.1">There is evidence of approval of the health facility to act as an internship centre (MOV-Documented approval)</string>
+    <string name="Rdim2.9.2">There is a documented MoU between the health facility and training institution on internship programs (MOV-Documented approval)</string>
+    <string name="Rdim2.9.3">There are documented guidelines for interns, students and registrars on attachment (MOV- HR records)</string>
+    <string name="Rdim2.9.4">There is an up to date register for interns and students (MOV- HR records)</string>
+
+    <string name="Std2.10">2.10 Staff attitude, motivation, job satisfaction, professional improvement shall be assessed and monitored.</string>
+    <string name="Rdim2.10.1">The facility assess and monitor staff attitude, motivation, job satisfaction and professional improvement (MOV- Staff satisfaction report)</string>
+
+
+    <!-- Guidlines strings -->
+
+    <string name="Dim3">Policies, Standards and Guidelines</string>
+
+    <string name="Std3.1">3.1 Health care facility shall align their operations with current Health Act, Kenya Health Policy and the Kenya Health Sector Strategic Plan.</string>
+    <string name="Rdim3.1.1">The operation plan for the health facility is aligned to the current Health Act,Kenya Health Policy and KHSSP (MOV-Current annual operational plan and objectives)</string>
+
+    <string name="Std3.2">3.2 Health facilities shall, at the minimum, have the relevant policy and strategic documents available on site (6)</string>
+    <string name="Rdim3.2.1">The facility has in place all key policy documents and strategic plan including but not limited to the following: (MOV- confirm availability of documents or internet access)</string>
+    <string name="Rdim3.2.1.1">- Current Kenya Health Policy</string>
+    <string name="Rdim3.2.1.2">- Current Kenya Health Sector Strategic and Investment Plan</string>
+    <string name="Rdim3.2.1.3">- Human resources Norms and Standards</string>
+    <string name="Rdim3.2.1.4">- Infrastructure Norms and Standards</string>
+    <string name="Rdim3.2.1.5">- Previous years annual performance report(s)</string>
+
+    <string name="Std3.3">3.3 A management system shall be in place for the implementation and regular review of standard operating procedures and/or protocols</string>
+    <string name="Rdim3.3.1">SOPs/protocols strategically displayed (MOV-SOPs and protocols in each service delivery area)</string>
+    <string name="Rdim3.3.2">Evidence that standard operating procedures and/or protocols are reviewed at least once a year (MOV- SOP with date of update displayed)</string>
+
+    <string name="Std3.4">3.4 Staff members are regularly updated on the current policies, standards and guidelines</string>
+    <string name="Rdim3.4.1">There is a documented plan for updating staff on the current policies, standards and guideline (MOV-documented plan )</string>
+
+    <string name="Std3.5">3.5 Facility shall ensure the availability of standard clinical treatment guidelines.</string>
+    <string name="Rdim3.5.1">The facility has relevant standard clinical treatment guidelines. (MOV- confirm physical or virtual access)</string>
+    <string name="Rdim3.5.2">Use and adherence to guidelines is monitored (MOV-monitoring report)</string>
+
+    <!-- Infrastructure strings -->
+
+    <string name="Dim4">Facilities and Infrastructure</string>
+
+    <string name="Std4.1">4.1 The health facility shall be planned, managed, and comply with the applicable guidelines, policies, gazette notices and regulations.</string>
+    <string name="Rdim4.1.1">The design of the facility is approved by the relevant authorities.(MOV-Approval of design)</string>
+    <string name="Rdim4.1.2">The design of the facility complies with the infrastructure norms and standards. (MOV- MandE checklist for assessing and monitoring infrastructure)</string>
+
+    <string name="Std4.2">4.2 Physical Facilities and Environmental Conditions</string>
+
+    <string name="Std4.2.1">4.2.1 The health facility layout shall provide adequate space for quality health service delivery, while ensuring safety of personnel, patients and visitors.</string>
+    <string name="Rdim4.2.1.1">The facility layout is appropriate for delivering health services (MOV- sample 1 outpatient and2 inpatient service areas)</string>
+    <string name="Rdim4.2.1.2">The service delivery rooms are well ventilated. (MOV- sample 1 outpatient and 2 inpatient service area)</string>
+    <string name="Rdim4.2.1.3">The service delivery rooms are well lit. (MOV- sample 1 outpatient and 2 inpatient service area)</string>
+    <string name="Rdim4.2.1.4">The service delivery rooms have the required equipment (MOV- sample 1 outpatient and 2 inpatient service area)</string>
+    <string name="Rdim4.2.1.5">The service delivery rooms have hand hygiene facilities (MOV- sample 1 outpatient and 2 inpatient service area)</string>
+    <string name="Rdim4.2.1.6">The facility has an accessibility ramp for disabled/wheelchair patients (MOV-observation)</string>
+
+    <string name="Std4.2.2">4.2.2 Environment monitoring shall be done in all relevant areas.(Environmental monitoring done in all relevant areas for the following (MOV-Monitoring log sheets, observation)</string>
+    <string name="Rdim4.2.2.1">Humidity</string>
+    <string name="Rdim4.2.2.2">Light</string>
+    <string name="Rdim4.2.2.3">Electrical supply</string>
+    <string name="Rdim4.2.2.4">Temperature</string>
+    <string name="Rdim4.2.2.5">Sound</string>
+    <string name="Rdim4.2.2.6">Vibrations</string>
+
+    <string name="Std4.2.3">4.2.3 Environment monitoring shall be done in all relevant areas.(There is evidence of corrective action for identified opportunities for improvement in the following areas (MOV-Documented plans for corrective measures)</string>
+    <string name="Rdim4.2.3.1">Humidity</string>
+    <string name="Rdim4.2.3.2">Light</string>
+    <string name="Rdim4.2.3.3">Electrical supply</string>
+    <string name="Rdim4.2.3.4">Temperature</string>
+    <string name="Rdim4.2.3.5">Sound</string>
+    <string name="Rdim4.2.3.6">Vibrations</string>
+
+    <string name="Std4.3">4.3 Sanitation and Hygiene</string>
+
+    <string name="Std4.3.1">4.3.1 The health facility infrastructure shall be designed, constructed and maintained to facilitate proper cleaning and drainage, infection prevention and control and pest, rodents and scavenger control</string>
+    <string name="Rdim4.3.1.1">The facility maintains smooth surfaces throughout to facilitate cleaning (MOV-observation of evidence of smooth surfaces)</string>
+    <string name="Rdim4.3.1.2">Design, construction and maintenance of the health facility allows fast drainage of water in sinks, wash basins, ablution and laundry area (MOV— interview maintenance staff and observation )</string>
+    <string name="Rdim4.3.1.3">Maintenance of the health facility aids control of pests, rodents and scavengers (MOV- interview maintenance staff and observation)</string>
+
+    <string name="Std4.3.2">4.3.2 Facility shall ensure there is adequate safe running water at all times</string>
+    <string name="Rdim4.3.2.1">Reliable sources of tap water (MOV- observation)</string>
+
+    <string name="Std4.4">4.4 Management of waste and hazardous materials</string>
+
+    <string name="Std4.4.1">4.4.1 The health facility shall implement measures on use, handling, storage and disposal of hazardous materials and waste</string>
+    <string name="Rdim4.4.1.1">Safe location for hazardous materials and wastes (MOV-physical facility or contract for outsourced services)</string>
+    <string name="Rdim4.4.1.2">Labelling of hazardous materials and wastes (MOV-observation)</string>
+    <string name="Rdim4.4.1.3">Access to certified incinerator</string>
+    <string name="Rdim4.4.1.4">Disposal protocols in place (MOV- disposal documents)</string>
+    <string name="Rdim4.4.1.5">Facility reports incidents to allow corrective actions (MOV- periodic reports)</string>
+    <string name="Rdim4.4.1.6">The facility has competent personnel responsible for waste disposal (MOV-designated officer with terms of reference or contract in case of outsourced services)</string>
+
+    <string name="Std4.5">4.5 Lighting and Security</string>
+
+    <string name="Std4.5.1">4.5.1 The health facility shall have a reliable and stable power supply.</string>
+    <string name="Rdim4.5.1.1">The facility has a reliable and stable power supply (MOV-evidence of connection to the national/regional power grid)</string>
+    <string name="Rdim4.5.1.2">The facility has a power back-up (MOV-evidence of functional and serviceable power back-up equipment)</string>
+
+    <string name="Std4.5.2">4.5.2 The health facility shall have adequate precautions to ensure the security of its premises, staff, patients and visitors</string>
+    <string name="Rdim4.5.2.1">The facility has a documented security plan (MOV-Documented security plan</string>
+    <string name="Rdim4.5.2.2">Facility implements the security plan (MOV- fencing, security guards, metallic grills in relevant areas, secure locks)</string>
+
+    <string name="Std4.6">4.6 Disaster Management, Emergency preparedness, and risk reduction</string>
+
+    <string name="Std4.6.1">4.6.1 The health facility shall have in place measures to facilitate emergency preparedness, disaster management and risk reduction.</string>
+    <string name="Rdim4.6.1.1">Training programs on emergency preparedness, disaster management and risk reduction (MOV-HR records)</string>
+    <string name="Rdim4.6.1.2">Standard operating procedures on emergency preparedness, disaster management and risk reduction (MOV-SOP)</string>
+    <string name="Rdim4.6.1.3">Fire, safety and security drills (MOV- drills schedule and report)</string>
+    <string name="Rdim4.6.1.4">Emergency exits and fire assembly points (MOV-Observation)</string>
+    <string name="Rdim4.6.1.5">Firefighting equipment and fire marshals (MOV-Observation)</string>
+    <string name="Rdim4.6.1.6">First aid kits (MOV-Observation)</string>
+    <string name="Rdim4.6.1.7">The facility has personnel responsible for emergency preparedness, disaster management and risk reduction (MOV-HR records)</string>
+
+    <string name="Std4.7">4.7 Storage facilities</string>
+
+    <string name="Std4.7.1">4.7.1 The health facility shall provide for adequate storage space and conditions that maintain the quality of material stored therein.</string>
+    <string name="Rdim4.7.1.1">The health facility has adequate storage space (MOV-observation)</string>
+    <string name="Rdim4.7.1.2">The storage space is organized to allow for first expiry first out (MOV-Bin cards and observation)</string>
+    <string name="Rdim4.7.1.3">The storage space has the right environmental conditions (temperature and humidity) (MOV-temperature and humidity monitoring charts as applicable)</string>
+
+    <string name="Std4.8">Amenities</string>
+    <string name="Std4.8.1">4.8.1 The health facility has amenities for staff and clients</string>
+    <string name="Rdim4.8.1.1">Availability of changing rooms for staff (MOV-observation)</string>
+    <string name="Rdim4.8.1.2">Availability of staff lounge (MOV-observation)</string>
+    <string name="Rdim4.8.1.3">Adequate storage for staffs personal possessions (MOV-observation)</string>
+    <string name="Rdim4.8.1.4">Availability of safe drinking water (MOV-interview staff)</string>
+    <string name="Rdim4.8.1.5">Clean and functional toilets are available for staff and clients (MOV-observation)</string>
+    <string name="Rdim4.8.1.6">The facility has ablution services for the disabled (MOV-observation)</string>
+
+    <string name="Std4.9">Linen and laundry services</string>
+    <string name="Std4.9.1">4.9 The facility linen and laundry services are operated according to documented procedure.</string>
+    <string name="Rdim4.9.1.1">The facility has a protocol for laundry and linen services which covers: (MOV-Linen and laundry protocol)
+
+- Collection and storage of contaminated linen
+- Cleaning of contaminated linen
+- Storage and distribution of clean linen</string>
+    <string name="Rdim4.9.1.2">There is at least one functioning, fully automatic washing machine (MOV-Observation)</string>
+    <string name="Rdim4.9.1.3">All laundry workers are trained (MOV- HR records)</string>
+    <string name="Rdim4.9.1.4">The space in the laundry is adequate to deal with the calculated or estimated dry weight of articles to be processed and the type of washing equipment. (MOV-observation) </string>
+
+    <string name="Std4.10">4.10 Health Facility Maintenance</string>
+    <string name="Std4.10.1">4.10.1 The healthcare facility infrastructure shall be maintained in a functional condition.</string>
+    <string name="Rdim4.10.1.1">The facility has a maintenance unit with trained staff/ access to maintenance services (MOV-HR records)</string>
+    <string name="Rdim4.10.1.2">The facility has a costed routine and periodic maintenance plan (MOV-Maintenance plan)</string>
+    <string name="Rdim4.10.1.3">The facility implements the routine and periodic maintenance plans (MOV-Reports of corrective actions, up to date service or service contracts for outsourced services)</string>
+
+    <string name="Std4.11">4.11 Implementation of 5S</string>
+    <string name="Std4.11.1">4.11 The facility shall implement 5S in all its departments</string>
+    <string name="Rdim4.11.1.1">All staff have been trained on 5S (MOV-Training log sheet)</string>
+    <string name="Rdim4.11.1.2">Facility implements 5S in all its departments (MOV-Observation, implementation reports)</string>
+    <string name="Rdim4.11.1.3">Implementation of 5S monitored and evaluated (MOV- 5S audit reports)</string>
+
+    <!-- Supplies Management strings -->
+
+    <string name="Dim5">Supplies Management</string>
+
+    <string name="Std5.1">5.1 Planning for procurement</string>
+    <string name="Std5.1.1">5.1.1 Approved plans for procurement of goods and services are available and incorporated in the facility budget.</string>
+    <string name="Rdim5.1.1.1">The facility has an approved procurement plan (MOV-Documented plan for current financial/calendar year, minutes)</string>
+    <string name="Rdim5.1.1.2">The procurement plan is incorporated in the facility budget (MOV-Approved budget)</string>
+
+    <string name="Std5.2">5.2 Prequalification of suppliers</string>
+    <string name="Std5.2.1">5.2.1 Prequalification of suppliers shall be done in line with guidelines and regulations.</string>
+    <string name="Rdim5.2.1.1">The facility carries out the prequalification of suppliers (MOV-List of pre-qualified suppliers/vendors, licences of supplies)</string>
+    <string name="Rdim5.2.1.2">The facility evaluates performance of suppliers annually (MOV- Minutes of evaluation meetings)</string>
+
+    <string name="Std5.3">5.3 Procedure of procurement</string>
+    <string name="Std5.3.1">5.3 There shall be a documented procedure for ordering, reception and storage of goods and services.</string>
+    <string name="Rdim5.3.1.1">The facility has qualified personnel designated to handle procurement (MOV-HR records)</string>
+    <string name="Rdim5.3.1.2">An inventory management system is in place (MOV-confirm for paper based or electronic system)</string>
+    <string name="Rdim5.3.1.3">Specifications for all products and services to be procured are in place (MOV-List/log sheet of specifications)</string>
+    <string name="Rdim5.3.1.4">The inventory records are up to date (MOV-Inventory book)</string>
+    <string name="Rdim5.3.1.5">Goods stored according to manufacturers specification (MOV-sample 3 items each from pharmacy stores, laboratory, general store and food store)</string>
+
+    <!-- Equipment Management strings -->
+
+    <string name="Dim6">Equipment Management</string>
+
+    <string name="Std6.1">6.1 The health facility shall have adequate equipment as per scope of service.</string>
+    <string name="Rdim6.1.1">The facility has a defined list of equipment and quantities required to provide each of the services offered (MOV-File with list of equipment)</string>
+    <string name="Rdim6.1.2">The facility has adequate number of functional equipment as per the scope of service (MOV-Sample three service delivery areas one for routine outpatient care, support services and inpatient care)</string>
+    <string name="Rdim6.1.3">The facility verifies that upon installation and before use, equipment is capable of achieving the necessary performance and complies with relevant requirements (MOV- Records of installation, records of validation and verification)</string>
+
+    <string name="Std6.2">6.2 There shall be an updated inventory for all equipment in the facility.</string>
+    <string name="Rdim6.2.1">The facility has an updated inventory of all equipment which should include: (MOV-Equipment inventory book or log sheet)</string>
+    <string name="Rdim6.2.1.1">-Identity of equipment</string>
+    <string name="Rdim6.2.1.2">-Manufacturers name, model and serial number or other unique number</string>
+    <string name="Rdim6.2.1.3">-Contact information for the supplier or manufacturer</string>
+    <string name="Rdim6.2.1.4">-Date of receiving and installation at facility</string>
+    <string name="Rdim6.2.1.5">-Location</string>
+    <string name="Rdim6.2.1.6">-Condition when received</string>
+    <string name="Rdim6.2.1.7">-Acceptance testing reports</string>
+    <string name="Rdim6.2.1.8">-Preventive maintenance records</string>
+    <string name="Rdim6.2.1.9">-Service records</string>
+
+    <string name="Std6.3">6.3.Donated equipment received by the facility shall meet the national policy, standards and facility specifications</string>
+    <string name="Rdim6.3.1">The facility has access to National Policy on handling of donated equipment (MOV-availability of the policy)</string>
+    <string name="Rdim6.3.2">The facility has standard operation procedures for receiving donated equipment aligned to national policy, standards and facility specification (MOV- availability of SOP)</string>
+
+    <string name="Std6.4">6.4 All equipment shall be operated by trained and authorized personnel.</string>
+    <string name="Rdim6.4.1">The facility equipment is operated by trained and authorised personnel (MOV-HR records)</string>
+
+    <string name="Std6.5">6.5 Operation manuals on the use, safety and maintenance of equipment are available.</string>
+    <string name="Rdim6.5.1">All equipment have operation manuals for use, safety and maintenance (MOV - manuals available on site)</string>
+    <string name="Rdim6.5.2">Equipment operation manuals are in a language that is understood by users (MOV - observation of manuals)</string>
+
+    <string name="Std6.6">6.6 All equipment shall be maintained in a functional condition.</string>
+    <string name="Rdim6.6.1">There is a preventive and periodic maintenance plan for all equipment in the facility (MOV-Maintenance plan)</string>
+    <string name="Rdim6.6.2">All equipment monitored in accordance with the manufacturers specifications and applicable standards (MOV-Sample one equipment from the support services)</string>
+    <string name="Rdim6.6.3">The facility has designated personnel for equipment maintenance or service contracts for maintenance with suppliers/manufacturers (MOV- evidence of designation or contract for out sourced services)</string>
+    <string name="Rdim6.6.4">There is a system for calibration and validation of equipment (MOV-Quality assurance log sheets/reports)</string>
+
+    <string name="Std6.7">6.7 Disposal of Equipment</string>
+
+    <string name="Std6.7.1">6.7.1 There shall be a procedure for disposal of obsolete equipment in line with current regulation</string>
+    <string name="Rdim6.7.1.1">The facility has a procedure for the disposal of obsolete equipment (MOV-SOPs)</string>
+    <string name="Rdim6.7.1.2">The disposal is done in accordance with the guidelines and regulations (MOV-Interview staff responsible equipment disposal)</string>
+
+    <!--Transport and Fleet Management strings -->
+
+    <string name="Dim7">Transport and Fleet Management</string>
+
+    <string name="Std7.1">7.1 The health facility shall have access to adequate and reliable transport facilities to support safe and effective service provision.</string>
+    <string name="Rdim7.1.1">The facility has access to adequate number of utility vehicles (MOV-feedback from administration)</string>
+    <string name="Rdim7.1.2">There is sufficient budget allocation for transport (MOV-Facility plan with approved budget for transport)</string>
+
+    <string name="Std7.2">7.2 The facility shall maintain all means of transport in a serviceable condition</string>
+    <string name="Rdim7.2.1">The facility has protocols for the maintenance of means of transport (where applicable) (MOV-availability of protocols)</string>
+    <string name="Rdim7.2.2">Service schedules and maintenance records are available and up-to-date (MOV- services schedules and maintenance records)</string>
+
+    <string name="Std7.3">7.3 There is a documented handover process for all vehicles.</string>
+    <string name="Rdim7.3.1">There is documented SOP for the handover of all means of transport (MOV-SOP available)</string>
+    <string name="Rdim7.3.2">Evidence of implementation of handover SOPs (MOV- handover records)</string>
+
+
+    <!--Referral System strings -->
+
+    <string name="Dim8">Referral System</string>
+
+    <string name="Std8.1">8.1 The facility shall ensure that referral guidelines and SOPs are available and communicated to the relevant staff</string>
+    <string name="Rdim8.1.1">National Referral Guidelines are available and accessible to relevant staff (MOV- confirm availability/accessibility to the guidelines) </string>
+    <string name="Rdim8.1.2">Facility referral SOPs available and accessible to staff (MOV-SOP available)</string>
+
+    <string name="Std8.2">8.2. The health facility shall ensure that patients are referred in a timely manner to the appropriate health facility or specialist, while ensuring continuity of care and patient safety.</string>
+    <string name="Rdim8.2.1">Patients referred within the time set in the service charter (MOV- Interview responsible staff)</string>
+    <string name="Rdim8.2.2">The facility has access to standard ambulance services at all times (MOV-Observe for availability of ambulances/ service contracts)</string>
+    <string name="Rdim8.2.3">Facility ensures a competent staff member accompanies patient during referral (MOV-Referral schedule/SOPs clearly displayed at service delivery areas)</string>
+    <string name="Rdim8.2.4">There is evidence that patients are referred to the appropriate health facility/specialist (MOV- referral register)</string>
+    <string name="Rdim8.2.5">There is continuity of care/ life support for the patient while in transit (MOV- SOPs/ Interview responsible staff)</string>
+
+    <string name="Std8.3">8.3 The referring facility effectively communicates with the receiving facility.</string>
+    <string name="Rdim8.3.1">The facility provides round-the-clock functional and effective hotline service managed by competent personnel conversant with the management of referrals.. There is a designated telephone line for referrals (MOV-call the hotline to confirm functionality)</string>
+    <string name="Rdim8.3.2">Referred patients are accompanied with duly filled referral documents containing at a minimum working diagnosis, investigations done, any other care provided (MOV- sample referral documents)</string>
+    <string name="Rdim8.3.3">Facility keeps referral records as per the National Referral Strategy (MOV- referral register)</string>
+    <string name="Rdim8.3.4">Feedback is provided to the referring facility (MOV-Reports)</string>
+    <string name="Rdim8.3.5">Contacts details of facilities and specialists to which patients are referred are available (MOV- Document with emails addresses, telephone and physical addresses)</string>
+
+    <string name="Std8.4">8.4 The health facility shall follow a documented procedure for handover of referred patients</string>
+    <string name="Rdim8.4.1">The health facility has a documented procedure for receiving referred patients. This includes but is not limited to: (MOV-Documented protocols and observation where possible)</string>
+    <string name="Rdim8.4.1.1">Location for receiving referred patients</string>
+    <string name="Rdim8.4.1.2">Patient admission to the relevant unit and attendance by appropriate specialist</string>
+    <string name="Rdim8.4.1.3">Involvement of patients and their escorts in handover processes</string>
+
+    <string name="Std8.5">8.5 Data on referrals/transfers is collected and used to continuously improve patient care and strengthen the referral system.</string>
+    <string name="Rdim8.5.1">The facility collects, analyses and uses the data to continuously improve patient care and strengthen the referral system (MOV- referral audit, and minutes from HMT discussing referral data)</string>
+
+
+    <!--HMIS strings -->
+
+    <string name="Dim9">Health Records and Health Management Information Systems</string>
+
+    <string name="Std9.1">9.1 The health facility shall have a system for data management</string>
+    <string name="Rdim9.1.1">The health facility has data collection tools (MOV-Observe at the records unit and one service delivery area)</string>
+    <string name="Rdim9.1.2">The health facility has periodic data analysis reports (MOV-Filed reports)</string>
+    <string name="Rdim9.1.3">Results of analysis are disseminated to facility staff for decision-making (MOV-Filed reports)</string>
+    <string name="Rdim9.1.4">Facility has adequate data storage equipment (Cloud, computers, hardcopy files) (MOV- observation and discussion with responsible staff)</string>
+    <string name="Rdim9.1.5">The health facility has defined access rights for electronic data management systems (administrative passwords) (MOV-Documented protocols)</string>
+    <string name="Rdim9.1.6">The health facility has a system for off-site backup and security (MOV- Feedback from records department)</string>
+
+    <string name="Std9.2">9.2 The health facility shall upload data on the DHIS as per legal requirements.</string>
+    <string name="Rdim9.2.1">The facility has more than one staff member with access rights to upload data onto DHIS (MOV-user names and passwords of HMT members)</string>
+    <string name="Rdim9.2.2">The facility uploads service delivery reports defined in the national DHIS manual (MOV- confirm data upload onto DHIS)</string>
+
+    <string name="Std9.3">9.3 Patient management and interventions shall be documented and signed by relevant personnel.</string>
+    <string name="Rdim9.3.1">The health facility has a a defined minimum criteria of patient history and examination (MOV-documented criteria)</string>
+    <string name="Rdim9.3.2">All treatments are documented and signed by relevant personnel (MOV- sample 5 patient files)</string>
+    <string name="Rdim9.3.3">Patients records contain information on diagnosis, treatment, and follow-up steps (MOV-sample 5 patient files)</string>
+
+    <string name="Std9.4">9.4 Patients records shall have minimum identification data Patients identification data include at least the following: (MOV-Sample 5 patients records)</string>
+    <string name="Rdim9.4.1">-Name</string>
+    <string name="Rdim9.4.2">-Unique patient identification</string>
+    <string name="Rdim9.4.3">-Patients ID number (where applicable)</string>
+    <string name="Rdim9.4.4">-Date of birth/ age</string>
+    <string name="Rdim9.4.5">-Sex</string>
+    <string name="Rdim9.4.6">-Residence</string>
+    <string name="Rdim9.4.7">-Contacts</string>
+    <string name="Rdim9.4.8">-Next of kin</string>
+
+    <string name="Std9.5">9.5 Medical records shall contain complete, legible and easily traceable information.</string>
+    <string name="Rdim9.5.1">All medical records are complete and legible (MOV-Sample 5 patient records from outpatient and inpatient)</string>
+    <string name="Rdim9.5.2">Medical records are retrievable within the timeframe stipulated in the service charter (MOV-Feedback from HR department/ observation)</string>
+
+    <string name="Std9.6">9.6 Records and information shall be protected from loss, destruction, tampering and unauthorized access or use.</string>
+    <string name="Rdim9.6.1">There are guidelines/SOPs for operating the registry to ensure there is no loss, destruction, tampering and unauthorized access to records and information (MOV- SOP, file movement register)</string>
+    <string name="Rdim9.6.2">Facility has a secure registry (MOV-lockable doors, grills, fireproof cabinets, passwords for electronic systems)</string>
+    <string name="Rdim9.6.3">Patient records are handled in a confidential manner (MOV- all staff have filled confidentiality forms)</string>
+
+    <string name="Std9.7">9.7 All births and deaths occurring in health facility are recorded and relevant authorities notified.</string>
+    <string name="Rdim9.7.1">There is an up to date birth register (MOV-register/ notification book)</string>
+    <string name="Rdim9.7.2">There is an up to date death register (MOV-register, notification book/ burial permit)</string>
+
+
+    <!-- Financial Management strings -->
+
+    <string name="Dim10">Financial Management</string>
+
+    <string name="Std10.1">10.1 The facility shall manage its finances based on policies and/or standard operating procedures</string>
+    <string name="Rdim10.1.1">The health facility has standard operating procedures to guide financial management (MOV-Document)</string>
+    <string name="Rdim10.1.2">Duties are appropriately segregated so that no transaction is handled by one finance team member from start to completion (MOV-Financial management protocols)</string>
+    <string name="Rdim10.1.3">Bank accounts managed only on the strength of management board resolution (MOV-Financial management protocols)</string>
+    <string name="Rdim10.1.4">The facility carries out annual internal audits (MOV- audit reports)</string>
+    <string name="Rdim10.1.5">The facility carries out annual external audits (MOV- audit reports)</string>
+
+    <string name="Std10.2">10.2 The facility shall budget for finances in line with the strategic and annual work plans.</string>
+    <string name="Rdim10.2.1">Budgets aligned to the facilitys annual work plan and strategic plan (MOV-Facilitys operational plan with budget)</string>
+    <string name="Rdim10.2.2">Budgets approved by the management board (MOV- Relevant minutes of board meeting)</string>
+    <string name="Rdim10.2.3">The health facility has a designated budget for implementing quality improvement interventions within the annual work plan (MOV- Budget)</string>
+
+    <string name="Std10.3">10.3 The facility shall maintain financial records to allow for continuous monitoring of income and expenditure in relation to performance data</string>
+    <string name="Rdim10.3.1">The facility monitors its income and expenditure in relation to performance data (MOV- minutes of meetings where monitoring information is discussed)</string>
+
+    <string name="Std10.4">10.4 The health facility shall have mechanisms for credit management/waiver and exemption from payment for patients who are not able to pay for services</string>
+    <string name="Rdim10.4.1">There is a documented procedure for credit monitoring/waiver (MOV- availability of waiver document)</string>
+    <string name="Rdim10.4.2">There is a documented procedure for exemptions (MOV- availability of exemptions document)</string>
+
+    <!-- Outpatient Services strings -->
+
+    <string name="Dim11.1">Outpatient Services</string>
+
+    <string name="Std11.1.1"></string>
+    <string name="Rdim11.1.1.1"></string>
+    <string name="Rdim11.1.1.2"></string>
+    <string name="Rdim11.1.1.3"></string>
+    <string name="Rdim11.1.1.4"></string>
+
+    <string name="Std11.1.2"></string>
+    <string name="Rdim11.1.2.1"></string>
+    <string name="Rdim11.1.2.2"></string>
+
+    <string name="Std11.1.3"></string>
+    <string name="Rdim11.1.3.1"></string>
+    <string name="Rdim11.1.3.2"></string>
+    <string name="Rdim11.1.3.3"></string>
+    <string name="Rdim11.1.3.4"></string>
+    <string name="Rdim11.1.3.5"></string>
+    <string name="Rdim11.1.3.6"></string>
+
+    <string name="Std11.1.4"></string>
+    <string name="Rdim11.1.4.1"></string>
+    <string name="Rdim11.1.4.2"></string>
+    <string name="Rdim11.1.4.3"></string>
+
+    <string name="Std11.1.5"></string>
+    <string name="Rdim11.1.5.1"></string>
+    <string name="Rdim11.1.5.2"></string>
+    <string name="Rdim11.1.5.3"></string>
+    <string name="Rdim11.1.5.4"></string>
+    <string name="Rdim11.1.5.5"></string>
+
+    <string name="Std11.1.6"></string>
+    <string name="Rdim11.1.6.1"></string>
+    <string name="Rdim11.1.6.2"></string>
+    <string name="Rdim11.1.6.3"></string>
+    <string name="Rdim11.1.6.4"></string>
+
+    <string name="Std11.1.7"></string>
+    <string name="Rdim11.1.7.1"></string>
+    <string name="Rdim11.1.7.2"></string>
+    <string name="Rdim11.1.7.3"></string>
+    <string name="Rdim11.1.7.4"></string>
+    <string name="Rdim11.1.7.5"></string>
+    <string name="Rdim11.1.7.6"></string>
+
+    <string name="Std11.1.8"></string>
+    <string name="Rdim11.1.8.1"></string>
+    <string name="Rdim11.1.8.2"></string>
+
+    <string name="Std11.1.9"></string>
+    <string name="Rdim11.1.9.1"></string>
+    <string name="Rdim11.1.9.2"></string>
+    <string name="Rdim11.1.9.3"></string>
+
+    <!--  Patient Centred Care strings -->
+
+    <string name="Dim11.2"> Patient Centred Care</string>
+
+    <string name="Std11.2.1"></string>
+    <string name="Rdim11.2.1.1"></string>
+    <string name="Rdim11.2.1.2"></string>
+    <string name="Rdim11.2.1.3"></string>
+    <string name="Rdim11.2.1.4"></string>
+
+    <string name="Std11.2.2"></string>
+    <string name="Rdim11.2.2.1"></string>
+    <string name="Rdim11.2.2.2"></string>
+    <string name="Rdim11.2.2.3"></string>
+    <string name="Rdim11.2.2.4"></string>
+    <string name="Rdim11.2.2.5"></string>
+    <string name="Rdim11.2.2.6"></string>
+
+    <string name="Std11.2.3"></string>
+    <string name="Rdim11.2.3.1"></string>
+    <string name="Rdim11.2.3.2"></string>
+
+    <string name="Std11.2.4"></string>
+    <string name="Rdim11.2.4.1"></string>
+    <string name="Rdim11.2.4.2"></string>
+    <string name="Rdim11.2.4.3"></string>
+
+    <string name="Std11.2.5"></string>
+    <string name="Rdim11.2.5.1"></string>
+    <string name="Rdim11.2.5.2"></string>
+
+    <string name="Std11.2.6"></string>
+    <string name="Rdim11.2.6.1"></string>
+    <string name="Rdim11.2.6.2"></string>
+    <string name="Rdim11.2.6.3"></string>
+    <string name="Rdim11.2.6.4"></string>
+    <string name="Rdim11.2.6.5"></string>
+    <string name="Rdim11.2.6.6"></string>
+
+    <string name="Std11.2.7"></string>
+    <string name="Rdim11.2.7.1"></string>
+    <string name="Rdim11.2.7.2"></string>
+
+    <string name="Std11.2.8"></string>
+    <string name="Rdim11.2.8.1"></string>
+
+    <string name="Std11.2.9"></string>
+    <string name="Rdim11.2.9.1"></string>
+    <string name="Rdim11.2.9.2"></string>
+    <string name="Rdim11.2.9.3"></string>
+
+    <string name="spinner_score">spinner_score%1$d</string>
 </resources>
 

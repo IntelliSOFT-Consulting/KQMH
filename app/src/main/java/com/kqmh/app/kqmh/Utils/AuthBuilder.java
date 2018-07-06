@@ -23,6 +23,7 @@ public class AuthBuilder {
         String auth = "Basic " + new String(encoded);
 
         Log.d("encoded", auth);
+
         return  auth ;
     }
 

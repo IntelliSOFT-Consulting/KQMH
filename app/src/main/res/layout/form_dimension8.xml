@@ -1,0 +1,1076 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:orientation="vertical">
+
+            <include layout="@layout/header"/>
+
+            <!-- button section -->
+            <include layout="@layout/nav_buttons"/>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_border"
+                app:cardCornerRadius="5dp"
+                card_view:cardElevation="9dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- dimension section -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/green"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:text="@string/Dim8"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <!-- sub standard & Requirements -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@color/blue"
+                            android:padding="5dp"
+                            android:text="@string/Std8.1"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="235dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@color/grey"
+                                android:padding="5dp"
+                                android:text="@string/Rdim8.1.1"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:background="@color/dark_blue"
+                                android:padding="5dp"
+                                android:text="scores"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                            <Spinner
+                                android:id="@+id/spinner_score171"
+                                android:background="@color/dark_blue"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:hint="@string/spinner_scores"
+                                android:prompt="@string/spinner_scores"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:paddingBottom="155dp"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:hint="comment"
+                            android:inputType="text"
+                            android:textColor="@color/grey"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="235dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@color/grey"
+                                android:padding="5dp"
+                                android:text="@string/Rdim8.1.2"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:background="@color/dark_blue"
+                                android:padding="5dp"
+                                android:text="scores"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                            <Spinner
+                                android:id="@+id/spinner_score172"
+                                android:background="@color/dark_blue"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:hint="@string/spinner_scores"
+                                android:prompt="@string/spinner_scores"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:paddingBottom="155dp"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:hint="comment"
+                            android:inputType="text"
+                            android:textColor="@color/grey"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <!-- sub standard & Requirements -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@color/blue"
+                            android:padding="5dp"
+                            android:text="@string/Std8.2"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="235dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@color/grey"
+                                android:padding="5dp"
+                                android:text="@string/Rdim8.2.1"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:background="@color/dark_blue"
+                                android:padding="5dp"
+                                android:text="scores"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                            <Spinner
+                                android:id="@+id/spinner_score177"
+                                android:background="@color/dark_blue"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:hint="@string/spinner_scores"
+                                android:prompt="@string/spinner_scores"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:paddingBottom="155dp"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:hint="comment"
+                            android:inputType="text"
+                            android:textColor="@color/grey"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="235dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@color/grey"
+                                android:padding="5dp"
+                                android:text="@string/Rdim8.2.2"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:background="@color/dark_blue"
+                                android:padding="5dp"
+                                android:text="scores"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                            <Spinner
+                                android:id="@+id/spinner_score178"
+                                android:background="@color/dark_blue"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:hint="@string/spinner_scores"
+                                android:prompt="@string/spinner_scores"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:paddingBottom="155dp"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:hint="comment"
+                            android:inputType="text"
+                            android:textColor="@color/grey"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="235dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@color/grey"
+                                android:padding="5dp"
+                                android:text="@string/Rdim8.2.3"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:background="@color/dark_blue"
+                                android:padding="5dp"
+                                android:text="scores"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                            <Spinner
+                                android:id="@+id/spinner_score179"
+                                android:background="@color/dark_blue"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:hint="@string/spinner_scores"
+                                android:prompt="@string/spinner_scores"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:paddingBottom="155dp"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:hint="comment"
+                            android:inputType="text"
+                            android:textColor="@color/grey"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="235dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@color/grey"
+                                android:padding="5dp"
+                                android:text="@string/Rdim8.2.4"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:background="@color/dark_blue"
+                                android:padding="5dp"
+                                android:text="scores"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                            <Spinner
+                                android:id="@+id/spinner_score180"
+                                android:background="@color/dark_blue"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:hint="@string/spinner_scores"
+                                android:prompt="@string/spinner_scores"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:paddingBottom="155dp"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:hint="comment"
+                            android:inputType="text"
+                            android:textColor="@color/grey"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="235dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@color/grey"
+                                android:padding="5dp"
+                                android:text="@string/Rdim8.2.5"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:background="@color/dark_blue"
+                                android:padding="5dp"
+                                android:text="scores"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                            <Spinner
+                                android:id="@+id/spinner_score181"
+                                android:background="@color/dark_blue"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:hint="@string/spinner_scores"
+                                android:prompt="@string/spinner_scores"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:paddingBottom="155dp"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:hint="comment"
+                            android:inputType="text"
+                            android:textColor="@color/grey"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <!-- sub standard & Requirements -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@color/blue"
+                            android:padding="5dp"
+                            android:text="@string/Std8.3"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="235dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@color/grey"
+                                android:padding="5dp"
+                                android:text="@string/Rdim8.3.1"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:background="@color/dark_blue"
+                                android:padding="5dp"
+                                android:text="scores"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                            <Spinner
+                                android:id="@+id/spinner_score182"
+                                android:background="@color/dark_blue"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:hint="@string/spinner_scores"
+                                android:prompt="@string/spinner_scores"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:paddingBottom="155dp"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:hint="comment"
+                            android:inputType="text"
+                            android:textColor="@color/grey"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="235dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@color/grey"
+                                android:padding="5dp"
+                                android:text="@string/Rdim8.3.2"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:background="@color/dark_blue"
+                                android:padding="5dp"
+                                android:text="scores"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                            <Spinner
+                                android:id="@+id/spinner_score183"
+                                android:background="@color/dark_blue"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:hint="@string/spinner_scores"
+                                android:prompt="@string/spinner_scores"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:paddingBottom="155dp"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:hint="comment"
+                            android:inputType="text"
+                            android:textColor="@color/grey"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="235dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@color/grey"
+                                android:padding="5dp"
+                                android:text="@string/Rdim8.3.3"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:background="@color/dark_blue"
+                                android:padding="5dp"
+                                android:text="scores"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                            <Spinner
+                                android:id="@+id/spinner_score184"
+                                android:background="@color/dark_blue"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:hint="@string/spinner_scores"
+                                android:prompt="@string/spinner_scores"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:paddingBottom="155dp"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:hint="comment"
+                            android:inputType="text"
+                            android:textColor="@color/grey"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="235dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@color/grey"
+                                android:padding="5dp"
+                                android:text="@string/Rdim8.3.4"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:background="@color/dark_blue"
+                                android:padding="5dp"
+                                android:text="scores"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                            <Spinner
+                                android:id="@+id/spinner_score185"
+                                android:background="@color/dark_blue"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:hint="@string/spinner_scores"
+                                android:prompt="@string/spinner_scores"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:paddingBottom="155dp"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:hint="comment"
+                            android:inputType="text"
+                            android:textColor="@color/grey"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="235dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@color/grey"
+                                android:padding="5dp"
+                                android:text="@string/Rdim8.3.5"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:background="@color/dark_blue"
+                                android:padding="5dp"
+                                android:text="scores"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                            <Spinner
+                                android:id="@+id/spinner_score186"
+                                android:background="@color/dark_blue"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:hint="@string/spinner_scores"
+                                android:prompt="@string/spinner_scores"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:paddingBottom="155dp"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:hint="comment"
+                            android:inputType="text"
+                            android:textColor="@color/grey"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <!-- sub standard & Requirements -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@color/blue"
+                            android:padding="5dp"
+                            android:text="@string/Std8.4"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@color/blue"
+                            android:padding="5dp"
+                            android:text="@string/Rdim8.4.1"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="235dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@color/grey"
+                                    android:padding="5dp"
+                                    android:text="@string/Rdim8.4.1.1"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"
+                                    android:background="@color/dark_blue"
+                                    android:padding="5dp"
+                                    android:text="scores"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp" />
+
+                                <Spinner
+                                    android:id="@+id/spinner_score187"
+                                    android:background="@color/dark_blue"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"
+                                    android:hint="@string/spinner_scores"
+                                    android:prompt="@string/spinner_scores"
+                                    android:textSize="12sp" />
+
+                            </LinearLayout>
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:padding="5dp"
+                                android:paddingBottom="155dp"
+                                android:background="@color/white"
+                                android:gravity="center_vertical"
+                                android:hint="comment"
+                                android:inputType="text"
+                                android:textColor="@color/grey"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="235dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@color/grey"
+                                    android:padding="5dp"
+                                    android:text="@string/Rdim8.4.1.2"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"
+                                    android:background="@color/dark_blue"
+                                    android:padding="5dp"
+                                    android:text="scores"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp" />
+
+                                <Spinner
+                                    android:id="@+id/spinner_score188"
+                                    android:background="@color/dark_blue"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"
+                                    android:hint="@string/spinner_scores"
+                                    android:prompt="@string/spinner_scores"
+                                    android:textSize="12sp" />
+
+                            </LinearLayout>
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:padding="5dp"
+                                android:paddingBottom="155dp"
+                                android:background="@color/white"
+                                android:gravity="center_vertical"
+                                android:hint="comment"
+                                android:inputType="text"
+                                android:textColor="@color/grey"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="235dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@color/grey"
+                                    android:padding="5dp"
+                                    android:text="@string/Rdim8.4.1.3"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"
+                                    android:background="@color/dark_blue"
+                                    android:padding="5dp"
+                                    android:text="scores"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp" />
+
+                                <Spinner
+                                    android:id="@+id/spinner_score189"
+                                    android:background="@color/dark_blue"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"
+                                    android:hint="@string/spinner_scores"
+                                    android:prompt="@string/spinner_scores"
+                                    android:textSize="12sp" />
+
+                            </LinearLayout>
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:padding="5dp"
+                                android:paddingBottom="155dp"
+                                android:background="@color/white"
+                                android:gravity="center_vertical"
+                                android:hint="comment"
+                                android:inputType="text"
+                                android:textColor="@color/grey"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+
+                    <!-- sub standard & Requirements -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@color/blue"
+                            android:padding="5dp"
+                            android:text="@string/Std8.5"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="235dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@color/grey"
+                                android:padding="5dp"
+                                android:text="@string/Rdim8.5.1"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:background="@color/dark_blue"
+                                android:padding="5dp"
+                                android:text="scores"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                            <Spinner
+                                android:id="@+id/spinner_score190"
+                                android:background="@color/dark_blue"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:hint="@string/spinner_scores"
+                                android:prompt="@string/spinner_scores"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:paddingBottom="155dp"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:hint="comment"
+                            android:inputType="text"
+                            android:textColor="@color/grey"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!-- button section -->
+            <include layout="@layout/dims_button"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

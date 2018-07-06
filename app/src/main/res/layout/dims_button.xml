@@ -5,21 +5,22 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:weightSum="1">
 
-        <TextView
-            android:layout_width="match_parent"
+        <Button
+            android:id="@+id/btn_dims"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_margin="15dp"
+            android:layout_weight=".4"
             android:background="@color/green"
             android:gravity="center"
-            android:paddingBottom="5dp"
-            android:paddingTop="5dp"
-            android:text="@string/Dim1"
-            android:textColor="@color/black"
-            android:textSize="18sp" />
-
+            android:onClick="Submit"
+            android:text="@string/dims"
+            android:textSize="13sp" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
